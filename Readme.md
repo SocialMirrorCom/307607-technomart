@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Екатерина Андреева](https://up.htmlacademy.ru/htmlcss/20/user/307607).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Мягких] (https://htmlacademy.ru/profile/emyagkikh).
 
 ---
 
