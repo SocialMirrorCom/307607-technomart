@@ -41,10 +41,10 @@
     <li><a href=""></a></li>
     <li><a href="">Каталог</a></li>
     <li><a href="">Инструмент</a></li>
-    <li><a href="">Перфораторы</a></li>
+    <li class="breadcrumbs-current">Перфораторы</li>
   </ul>
   <h2>Перфораторы</h2>
-  <aside class="filter">
+  <section class="filters">
     <p>Фильтр:</p>
     <div class="price">
       <!--Забыла как этот элемент называется, и поэтому не могу его найти и посмотреть как делать, нужна подсказка-->
@@ -67,7 +67,7 @@
       </ul>
     </div>
     <button>Показать</button>
-  </aside>
+  </section>
 <div class="sorting">
   <p>Сортировка:</p>
   <ul>
@@ -77,69 +77,79 @@
   </ul>
 </div>
 <section class="catalog">
-  <div class="item">
+  <ul class="catalog-list">
+    <li class="catalog-item">
             <img src="" alt="Перфоратор BOSCH BFG 3000" width="" height="">
             <h3>Перфоратор BOSCH BFG 3000</h3>
             <p class="old-price">22500 Р.</p>
             <p class="new-price">15500 Р.</p>
-          </div>
-          <div class="item">
+          </li>
+          <!--Пока сделала один, если верно сделаю для всех товаров-->
+          <li class="catalog-item-hover">
+            <button class="buy">Купить</button>
+            <button class="favorite">В закладки</button>
+            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <p class="old-price">22500 Р.</p>
+            <p class="new-price">15500 Р.</p>
+          </li>
+          <li class="catalog-item">
             <img src="" alt="Перфоратор BOSCH BFG 6000" width="" height="">
             <h3>Перфоратор BOSCH BFG 6000</h3>
             <p class="old-price">30500 P.</p>
             <p class="new-price">25500 P.</p>
-          </div>
-          <div class="item">
+          </li>
+          <li class="catalog-item">
             <img src="" alt="Перфоратор BOSCH BFG 2000" width="" height="">
             <h3>Перфоратор BOSCH BFG 2000</h3>
             <p class="old-price"></p>
             <p class="new-price">12500 P.</p>
-          </div>
-          <div class="item">
+          </li>
+          <li class="catalog-item">
             <img src="" alt="Перфоратор BOSCH BFG 3000" width="" height="">
             <h3>Перфоратор BOSCH BFG 3000</h3>
             <p class="old-price">22500 Р.</p>
             <p class="new-price">15500 Р.</p>
-          </div>
-          <div class="item">
+          </li>
+          <li class="catalog-item">
             <img src="" alt="Перфоратор BOSCH BFG 6000" width="" height="">
             <h3>Перфоратор BOSCH BFG 6000</h3>
             <p class="old-price">30500 P.</p>
             <p class="new-price">25500 P.</p>
-          </div>
-          <div class="item">
+          </li>
+          <li class="catalog-item">
             <img src="" alt="Перфоратор BOSCH BFG 2000" width="" height="">
             <h3>Перфоратор BOSCH BFG 2000</h3>
             <p class="old-price"></p>
             <p class="new-price">12500 P.</p>
-          </div>
-          <div class="item">
+          </li>
+          <li class="catalog-item">
             <img src="" alt="Перфоратор BOSCH BFG 3000" width="" height="">
             <h3>Перфоратор BOSCH BFG 3000</h3>
             <p class="old-price">22500 Р.</p>
             <p class="new-price">15500 Р.</p>
-          </div>
-          <div class="item">
+          </li>
+          <li class="catalog-item">
             <img src="" alt="Перфоратор BOSCH BFG 6000" width="" height="">
             <h3>Перфоратор BOSCH BFG 6000</h3>
             <p class="old-price">30500 P.</p>
             <p class="new-price">25500 P.</p>
-          </div>
-          <div class="item">
+          </li>
+          <li class="catalog-item">
             <img src="" alt="Перфоратор BOSCH BFG 2000" width="" height="">
             <h3>Перфоратор BOSCH BFG 2000</h3>
             <p class="old-price"></p>
             <p class="new-price">12500 P.</p>
-          </div>
+          </li>
+        </ul>
 </section>
-<div class="pages-numbers">
+<section class="pages-numbers">
   <ul>
-    <li><a href="">1</a></li>
-    <li><a href="">2</a></li>
-    <li><a href="">3</a></li>
-    <li><a href="">Следующая</a></li>
+    <li><button>1</button></li>
+    <li><button>2</button></li>
+    <li><button>3</button></li>
+    <li><button>Следующая</button></li>
   </ul>
-</div>
+</section>
 <div class="category-info">
   <h2>Пара слов о перфораторах</h2>
   <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
@@ -185,34 +195,3 @@
 
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
