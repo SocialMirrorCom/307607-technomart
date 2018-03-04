@@ -26,7 +26,10 @@
         <div class="adress">
         <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <p class="user-name">Равшан Джамшутович</p>
+        <div class="authorized-user-name"></div>
+        <p class="user-name"><a href="#">Равшан Джамшутович</a></p>
+        <p class="user-exit"><a href="#">Выход</a></p>
+        </div>
 <ul class="user-navigation">
 	<li><a href="#" class="my-orders">Мои заказы</a></li>
 	<li><a href="#" class="personal-account">Личный кабинет</a></li>
@@ -53,10 +56,12 @@
   </ul>
   <h2>Перфораторы</h2>
   <section class="filters">
+    <h2 class="visually-hidden">Фильтр товаров</h2>
     <p>Фильтр:</p>
     <div class="price">
       <!--Забыла как этот элемент называется, и поэтому не могу его найти и посмотреть как делать, нужна подсказка-->
     </div>
+    <!-- Здесь будет форма -->
     <div class="producers-filter">
       <p>Производители:</p>
       <ul class="producers">
@@ -74,20 +79,21 @@
         <li>Сетевые</li>
       </ul>
     </div>
-    <button>Показать</button>
+    <button type="button">Показать</button>
   </section>
 <div class="sorting">
   <p>Сортировка:</p>
   <ul>
-    <li><button>По цене</button></li>
-    <li><button>По типу</button></li>
-    <li><button>По функционалу</button></li>
+    <li><button type="button">По цене</button></li>
+    <li><button type="button">По типу</button></li>
+    <li><button type="button">По функционалу</button></li>
   </ul>
 </div>
 <section class="catalog">
+  <h2 class="visually-hidden">Каталог перфораторов</h2>
   <ul class="catalog-list">
     <li class="catalog-item">
-            <img src="" alt="Перфоратор BOSCH BFG 3000" width="" height="">
+            <p class="catalog-item-image"><img src="" alt="Перфоратор BOSCH BFG 3000" width="" height=""></p>
             <button type="button" class="buy">Купить</button>
             <button type="button" class="favorite">В закладки</button>
             <h3>Перфоратор BOSCH BFG 3000</h3>
@@ -95,7 +101,7 @@
             <p class="new-price">15500 Р.</p>
           </li>
           <li class="catalog-item">
-            <img src="" alt="Перфоратор BOSCH BFG 6000" width="" height="">
+            <p class="catalog-item-image"><img src="" alt="Перфоратор BOSCH BFG 6000" width="" height=""></p>
             <button type="button" class="buy">Купить</button>
             <button type="button" class="favorite">В закладки</button>
             <h3>Перфоратор BOSCH BFG 6000</h3>
@@ -103,7 +109,7 @@
             <p class="new-price">25500 P.</p>
           </li>
           <li class="catalog-item">
-            <img src="" alt="Перфоратор BOSCH BFG 2000" width="" height="">
+            <p class="catalog-item-image"><img src="" alt="Перфоратор BOSCH BFG 2000" width="" height=""></p>
             <button type="button" class="buy">Купить</button>
             <button type="button" class="favorite">В закладки</button>
             <h3>Перфоратор BOSCH BFG 2000</h3>
@@ -111,7 +117,7 @@
             <p class="new-price">12500 P.</p>
           </li>
           <li class="catalog-item">
-            <img src="" alt="Перфоратор BOSCH BFG 3000" width="" height="">
+            <p class="catalog-item-image"><img src="" alt="Перфоратор BOSCH BFG 3000" width="" height=""></p>
             <button type="button" class="buy">Купить</button>
             <button type="button" class="favorite">В закладки</button>
             <h3>Перфоратор BOSCH BFG 3000</h3>
@@ -119,7 +125,7 @@
             <p class="new-price">15500 Р.</p>
           </li>
           <li class="catalog-item">
-            <img src="" alt="Перфоратор BOSCH BFG 6000" width="" height="">
+            <p class="catalog-item-image"><img src="" alt="Перфоратор BOSCH BFG 6000" width="" height=""></p>
             <button type="button" class="buy">Купить</button>
             <button type="button" class="favorite">В закладки</button>
             <h3>Перфоратор BOSCH BFG 6000</h3>
@@ -127,7 +133,7 @@
             <p class="new-price">25500 P.</p>
           </li>
           <li class="catalog-item">
-            <img src="" alt="Перфоратор BOSCH BFG 2000" width="" height="">
+            <p class="catalog-item-image"><img src="" alt="Перфоратор BOSCH BFG 2000" width="" height=""></p>
             <button type="button" class="buy">Купить</button>
             <button type="button" class="favorite">В закладки</button>
             <h3>Перфоратор BOSCH BFG 2000</h3>
@@ -135,7 +141,7 @@
             <p class="new-price">12500 P.</p>
           </li>
           <li class="catalog-item">
-            <img src="" alt="Перфоратор BOSCH BFG 3000" width="" height="">
+            <p class="catalog-item-image"><img src="" alt="Перфоратор BOSCH BFG 3000" width="" height=""></p>
             <button type="button" class="buy">Купить</button>
             <button type="button" class="favorite">В закладки</button>
             <h3>Перфоратор BOSCH BFG 3000</h3>
@@ -143,7 +149,7 @@
             <p class="new-price">15500 Р.</p>
           </li>
           <li class="catalog-item">
-            <img src="" alt="Перфоратор BOSCH BFG 6000" width="" height="">
+            <p class="catalog-item-image"><img src="" alt="Перфоратор BOSCH BFG 6000" width="" height=""></p>
             <button type="button" class="buy">Купить</button>
             <button type="button" class="favorite">В закладки</button>
             <h3>Перфоратор BOSCH BFG 6000</h3>
@@ -151,7 +157,7 @@
             <p class="new-price">25500 P.</p>
           </li>
           <li class="catalog-item">
-            <img src="" alt="Перфоратор BOSCH BFG 2000" width="" height="">
+            <p class="catalog-item-image"><img src="" alt="Перфоратор BOSCH BFG 2000" width="" height=""></p>
             <button type="button" class="buy">Купить</button>
             <button type="button" class="favorite">В закладки</button>
             <h3>Перфоратор BOSCH BFG 2000</h3>
@@ -160,12 +166,12 @@
           </li>
         </ul>
 </section>
-<section class="pages-numbers">
+<section class="pagination-list">
   <ul>
-    <li><button>1</button></li>
-    <li><button>2</button></li>
-    <li><button>3</button></li>
-    <li><button>Следующая</button></li>
+    <li class="pagination-item pagination-item-current"><button type="button">1</button></li>
+    <li class="pagination-item"><button type="button">2</button></li>
+    <li class="pagination-item"><button type="button">3</button></li>
+    <li class="pagination-item"><button type="button">Следующая</button></li>
   </ul>
 </section>
 <div class="category-info">
