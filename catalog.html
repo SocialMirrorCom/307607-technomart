@@ -12,8 +12,8 @@
   				<label for="search-field">Поиск:</label>
   					<input type="search" id="search-field" name="search-field">
   			</form>
-  			<a href="#" class="favorite">Закладки</a>
-  			<a href="#" class="cart">Корзина</a>
+  			<a href="#" class="favorite">Закладки: 0</a>
+  			<a href="#" class="cart">Корзина: 10</a>
   			<a href="#" class="set-order">Оформить заказ</a>
   		</div>
   		<div class="header-middle">
@@ -89,7 +89,7 @@
       <legend>Питание:</legend>
       <ul>
         <li class="filter-option">
-          <input class="visually-hidden filter-input filter-input-radio" type="radio" name="charging-type-group" value="accumulator" id="filter-accumulator">
+          <input class="visually-hidden filter-input filter-input-radio" type="radio" name="charging-type-group" value="accumulator" id="filter-accumulator" checked>
         <label for="filter-accumulator">Аккумуляторные</label> 
       </li>
         <li class="filter-option">
@@ -101,12 +101,14 @@
     <button type="submit" class="filter-button button">Показать</button>
   </form>
   </section>
-<div class="sorting">
+<div class="sort">
   <p>Сортировка:</p>
   <ul>
     <li><button type="button">По цене</button></li>
     <li><button type="button">По типу</button></li>
     <li><button type="button">По функционалу</button></li>
+    <li><button class="icon-up-dir" type="button">По возрастанию</button></li>
+    <li><button class="icon-down-dir" type="button">По убыванию</button></li>
   </ul>
 </div>
 <section class="catalog">
