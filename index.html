@@ -9,7 +9,7 @@
   		<div class="header-top">
   			<a href="#" class="main-header-logo"><img src="img/logo-header.png" alt="Инструменты Техномарт" width="220" height="47"></a>
   			<form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <label for="search-field">Поиск</label>
+          <label for="search-field">Поиск:</label>
             <input type="search" id="search-field" name="search-field">
         </form>
   			<a href="#">Закладки</a>
@@ -202,6 +202,25 @@
           <p>Разработано - <br><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
   </div>
 </footer>
+<section class="modal modal-feedback">
+  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="user-name-label">Ваше имя:</label>
+      <input  class="user-name-field" id="user-name-label" type="text" name="user-name"  placeholder="Представьтесь, пожалуйста">
+    </p>
+    <p>
+      <label for="user-email-label">Ваше e-mail:</label>
+      <input  class="user-email-field" id="user-email-label" type="email" name="user-email"  placeholder="Для отправки ответа">
+    </p>
+    <p>
+      <label for="feedback-area-label">Текст письма:</label>
+      <textarea name="feedback-area" id="feedback-area-label" cols="30" rows="10" placeholder="В свободной форме">
+      </textarea>
+    </p>
+  <button class="button" type="submit">Отправить</button>
+  </form>
+  <button class="modal-close" type="button">Закрыть</button>
+</section>
 
 
     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
