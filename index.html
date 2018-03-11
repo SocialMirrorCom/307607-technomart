@@ -62,18 +62,32 @@
   				<span>Доставка</span>
   				<a href="#">Бесплатно</a>
   			</div>
-  			<div class="slide-bar">
-  				<div class="slide-one">
-  				<h3>Дрели</h3>
-  				<span>Coседям на радость!</span>
-  			    <a href="#" class="open-catalog btn">Открыть каталог</a>
-  			    </div>	
-  			    <div class="slide-two">
+        </section>
+        <section class="slide-bar">
+          <div class="slider">
+                <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+                <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+                <div class="slider-controls">
+                    <label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                </div>
+  			  <div class="slider-inner">     
+          <div class="slider-slides">     
+  			  <div class="slide-one">
   				<h3>Перфораторы</h3>
   				<span>Настоящие мужские игрушки</span>
-  				<a href="catalog.html" class="open-catalog btn">Открыть каталог</a>
-  			</div>	
-  			</div>	
+  				<img src="slider-1.jpg" alt="Перфораторы" width="620" height="266">
+          <a href="catalog.html" class="open-catalog btn">Открыть каталог</a>
+  			  </div>	
+          <div class="slide-two">
+          <h3>Дрели</h3>
+          <span>Coседям на радость!</span>
+          <img src="slider-2.jpg" alt="Дрели" width="620" height="266">
+          <a href="catalog.html" class="open-catalog btn">Открыть каталог</a>
+          </div>  
+          </div>
+          </div>
+          </div>
   		</section>
   		<section class="popular-items">
   				<h2>Популярные товары:</h2>
@@ -215,8 +229,7 @@
     </p>
     <p>
       <label for="feedback-area-label">Текст письма:</label>
-      <textarea name="feedback-area" id="feedback-area-label" cols="30" rows="10" placeholder="В свободной форме">
-      </textarea>
+      <textarea name="feedback-area" id="feedback-area-label" cols="30" rows="10" placeholder="В свободной форме"></textarea>
     </p>
   <button class="button" type="submit">Отправить</button>
   </form>
