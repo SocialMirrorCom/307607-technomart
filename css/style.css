@@ -240,10 +240,71 @@ h2 {
   line-height: 20px;
   color: #000000;
 }
-
-.main-contacts p {
-
+.footer-top-middle {
+  background-color: #32425c;
 }
+.footer-bottom {
+  background-color: #293449;
+  font-size: 16px;
+  line-height: 18px;
+}
+.footer-nav-white {
+  list-style: none;
+}
+.footer-nav-white a,
+.footer-middle p,
+.footer-middle a {
+  font-size: 18px;
+  line-height: 24px;
+  color: inherit;
+}
+.footer-nav-white a:hover {
+  text-decoration: underline;
+}
+.footer-nav-white a:active {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-nav-yellow {
+  list-style: none;
+}
+.footer-nav-yellow a {
+  color: #ffda96;
+}
+.footer-nav-yellow a:hover {
+  text-decoration: underline;
+}
+.footer-nav-yellow a:active {
+  text-decoration: none;
+  color: #ffda96;
+  opacity: 0.5;
+}
+.footer-email,
+.footer-developer {
+  color: #ffda96;
+}
+.modal-feedback {
+  border-top: 7px solid #ff5357;
+}
+.feedback-form label {
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+.feedback-form input,
+.feedback-form textarea {
+  border: 2px solid #dee3e4;
+  border-radius: 2px;
+}
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+
+
 
 
 
