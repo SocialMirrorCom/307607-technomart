@@ -29,6 +29,10 @@ a {
 .search:active{
   background-color: #ffffff;
 }
+.header-favorite:hover,
+.header-cart:hover {
+  background-color: #212a3a;
+}
 .header-favorite:active,
 .header-cart:active {
   background-color: #161d29;
@@ -61,6 +65,14 @@ h1 {
   line-height: 24px;
   color: #32425c;
 }
+.user-name a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+.user-name a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 .user-navigation a {
   font-size: 21px;
   line-height: 21px;
@@ -73,6 +85,19 @@ h1 {
   color: #000000;
   opacity: 0.3;
   /*color: rgb(197, 197, 197);*/
+}
+.user-navigation-catalog a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+.user-navigation-catalog a:hover {
+color: #ee3643;
+}
+.user-navigation-catalog a:active {
+color: #32425c;
+opacity: 0.3;
 }
 .main-navigation {
   background-color: #293449;
@@ -282,6 +307,24 @@ h2 {
 .footer-email,
 .footer-developer {
   color: #ffda96;
+}
+.footer-email:hover,
+.footer-developer:hover {
+  text-decoration: underline;
+}
+.footer-email:active,
+.footer-developer:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+.footer-social a {
+  background-color: #212a3a;
+  border-radius: 50%;
+  color: inherit;
+}
+.footer-social a:hover,
+.footer-social a:active {
+  background-color: #ee3643;
 }
 .modal-feedback {
   border-top: 7px solid #ff5357;
