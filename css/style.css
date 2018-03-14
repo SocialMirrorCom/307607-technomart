@@ -201,7 +201,9 @@ h2 {
 .services {
   background-color: #f4f7f9;
 }
-.services p {
+.services p,
+.about-company p,
+.main-contacts p {
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -230,7 +232,18 @@ h2 {
   color: #32425c;
   background-color: #ffffff;
 }
+.about-company ul {
+  list-style: none;
+}
+.about-company li {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
 
+.main-contacts p {
+
+}
 
 
 
