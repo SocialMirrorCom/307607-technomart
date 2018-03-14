@@ -103,7 +103,12 @@ opacity: 0.3;
   background-color: #293449;
 }
 .user-navigation,
-.site-navigation {
+.site-navigation,
+.breadcrumbs,
+.producers-filter ul,
+.sort ul,
+.charging-type ul,
+.pagination-list {
   list-style: none;
 }
 .site-navigation a {
@@ -115,6 +120,15 @@ opacity: 0.3;
 .site-navigation a:active {
   background-color: #1d2739;
   color: rgba(255, 255, 255, 0.50)
+}
+.breadcrumbs a,
+.breadcrumbs-current,
+.pagination-list a {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
 }
 .promo-materials {
   background-color: #ffbf47;
@@ -169,6 +183,7 @@ opacity: 0.3;
   line-height: 36px;
   font-style: bold;
   text-transform: uppercase;
+
 }
 .slide span {
   font-size: 18px;
@@ -182,6 +197,49 @@ h2 {
   line-height: 30x;
   color: #000000;
   text-transform: uppercase;
+  font-weight: 400;
+}
+.h2-catalog {
+  color: #32425c;
+}
+.filters,
+.sort,
+.sort a,
+.filter-button {
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+.filters h3,
+.sort p,
+.sort a,
+.filter-button {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+.min-value,
+.max-value {
+  font-size: 17px;
+  line-height: 18px;
+}
+.price-legend,
+.producers-legend,
+.charging-legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+.filter-option label {
+  font-size: 15px;
+  line-height: 20px;
+}
+.red a {
+  color: #ee3643;
+}
+.underline a {
+  border-bottom: 1px dotted #ee3643;
+  color: rgba(0, 0, 0, 0.3);
 }
 .popular-items h2 {
   color: #32425c;
@@ -212,6 +270,40 @@ h2 {
 .catalog-item .new-price {
   background-color: #ee3643;
 }
+.hidden {
+  display: none;
+}
+.buy {
+  font-size: 14px;
+  line-height: 18px;
+  color: inherit;
+  text-transform: uppercase;
+  background-color: #63a63e;
+  border: 1px solid #63a63e;
+  border-radius: 3px;
+  border-bottom: 3px solid #367315;
+}
+.favorite {
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 3px solid #63a63e;
+  border-radius: 3px;
+}
+.pagination-item a {
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+}
+.pagination-item-current a {
+  color: #ffffff;
+  background-color: #ee3643;
+  border: 1px solid #ee3643;
+}
+.category-info {
+  background-color: #f2f6f8;
+}
 .popular-producers h2 {
   color: #32425c;
   background-color: #f9f5f0;
@@ -228,7 +320,8 @@ h2 {
 }
 .services p,
 .about-company p,
-.main-contacts p {
+.main-contacts p,
+.category-info p {
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -239,6 +332,7 @@ h2 {
   line-height: 36px;
   color: #32425c;
   text-transform: uppercase;
+  font-weight: 400;
 }
 .services-list {
   list-style: none;
