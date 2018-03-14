@@ -241,6 +241,16 @@ h2 {
   border-bottom: 1px dotted #ee3643;
   color: rgba(0, 0, 0, 0.3);
 }
+.red a:hover,
+.underline a:hover {
+  color: #000000;
+  border-bottom: 1px dotted #ee3643;
+}
+.red a:active,
+.underline a:active {
+  color: #ee3643;
+  border: none;
+}
 .popular-items h2 {
   color: #32425c;
   background-color: #f9f5f0;
@@ -295,6 +305,12 @@ h2 {
 .pagination-item a {
   border: 1px solid #e5e5e5;
   border-radius: 2px;
+}
+.pagination-item a:hover {
+  border: 1px solid #bdc6ca;
+}
+.pagination-item a:active{
+  border: 1px solid #ee3744;
 }
 .pagination-item-current a {
   color: #ffffff;
@@ -439,6 +455,25 @@ h2 {
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
+}
+.modal-add-to-cart {
+  border-top: 7px solid #ff5357;
+}
+.modal-add-to-cart p {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+.modal-buttons {
+  background-color: #f1f1f1;
+}
+.modal-buttons button {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+
 }
 
 
