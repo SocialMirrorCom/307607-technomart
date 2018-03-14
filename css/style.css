@@ -1,16 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: 'Cuprum', 'PT Sans', sans-serif;
   font-size: 17px;
   line-height: 17px;
   font-weight: 400;
   color: #ffffff;
-  text-transform: uppercase;
-
   background-color: #ffffff;
-
 }
 a {
   text-decoration: none;
@@ -21,7 +17,6 @@ a {
 }
 .header-top {
   line-height: 18px;
-  text-transform: none;
   background-color: #293449;
 }
 .header-top a {
@@ -54,7 +49,6 @@ h1 {
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
-  text-transform: none;
 }
 
 .contacts .phone-number a {
@@ -66,13 +60,11 @@ h1 {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-  text-transform: none;
 }
 .user-navigation a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-  text-transform: none;
 }
 .user-navigation a:hover {
   color: #ee3643;
@@ -118,12 +110,12 @@ h1 {
   font-size: 24px;
   line-height: 30px;
   font-style: bold;
-  text-transform: none;
 }
 .promo a {
   font-size: 14px;
   line-height: 18px;
   color: inherit;
+  text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.1);
 }
 .promo a:hover {
@@ -137,6 +129,7 @@ h1 {
   line-height: 17px;
   color: inherit;
   text-align: center;
+  text-transform: uppercase;
   background-color: #ee3643;
   border-radius: 2px; /*проверить*/
 }
@@ -150,6 +143,7 @@ h1 {
   font-size: 36px;
   line-height: 36px;
   font-style: bold;
+  text-transform: uppercase;
 }
 .slide span {
   font-size: 18px;
@@ -157,6 +151,55 @@ h1 {
 }
 .slider {
   background-color: #685c53; /* На тот случай, если картинки не загрузятся*/
+}
+h2 {
+  font-size: 30px;
+  line-height: 30x;
+  color: #000000;
+  text-transform: uppercase;
+}
+.popular-items h2 {
+  color: #32425c;
+  background-color: #f9f5f0;
+}
+.catalog {
+  list-style: none;
+}
+.catalog-item {
+  border: 1px solid #eaeaea;
+  font-family: 'PT Sans', sans-serif;
+  font-style: bold;
+  text-align: center;
+}
+.catalog-item h3 {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+.catalog-item .price {
+  font-size: 17px;
+  line-height: 18px;
+  }
+.catalog-item .old-price {
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+.catalog-item .new-price {
+  background-color: #ee3643;
+}
+.popular-producers h2 {
+  color: #32425c;
+  background-color: #f9f5f0;
+}
+.producers-list {
+   list-style: none;
+}
+.producer {
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+.services {
+  background-color: #f4f7f9;
 }
 
 
