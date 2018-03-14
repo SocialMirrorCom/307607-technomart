@@ -201,6 +201,39 @@ h2 {
 .services {
   background-color: #f4f7f9;
 }
+.services p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+.services h3 {
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+.services-list {
+  list-style: none;
+}
+.services-list button {
+  font-style: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #32425c;
+}
+.services-list button:hover {
+  background-color: #293449;
+}
+.services-list button:active {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+
+
+
 
 
 
