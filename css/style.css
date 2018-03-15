@@ -1,53 +1,73 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Cuprum', 'PT Sans', sans-serif;
+  font-family: 'Cuprum', 'PT Sans', 'Arial', sans-serif;
   font-size: 17px;
   line-height: 17px;
   font-weight: 400;
   color: #ffffff;
   background-color: #ffffff;
 }
+
 a {
   text-decoration: none;
 }
+
 .main-header {
   background-color: rgb(243, 247, 248);
-
 }
+
 .header-top {
   line-height: 18px;
   background-color: #293449;
 }
+
 .header-top a {
   color: inherit;
 }
-.search:hover{
+
+.search input {
+  background-color: transparent;
+  border: none;
+}
+
+.search:hover,
+.search:focus {
   background-color: #212a3a;
 }
+
 /*Эффект с исчезновением слова Поиск доделаю, когда буду знать как*/
 .search:active{
   background-color: #ffffff;
 }
+
 .header-favorite:hover,
-.header-cart:hover {
+.header-favorite:focus,
+.header-cart:hover,
+.header-cart:focus {
   background-color: #212a3a;
 }
+
 .header-favorite:active,
 .header-cart:active {
   background-color: #161d29;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .header-order {
   background-color: #63a63e;
 }
-.header-order:hover {
+
+.header-order:hover,
+.header-order:focus {
   background-color: #5fbb2d;
 }
+
 .header-order:active {
   background-color: #518534;
   color: rgba(255, 255, 255, 0.51);
 }
+
 h1 {
   font-size: 16px;
   line-height: 23px;
@@ -60,48 +80,62 @@ h1 {
   line-height: 21px;
   color: #ee3643;
 }
+
 .contacts .adress {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
 }
+
 .user-name a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
 }
+
 .user-name a:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
 .user-navigation a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+  background-color: #ffffff;
 }
-.user-navigation a:hover {
+
+.user-navigation a:hover,
+.user-navigation a:focus {
   color: #ee3643;
 }
+
 .user-navigation a:active {
   color: #000000;
   opacity: 0.3;
   /*color: rgb(197, 197, 197);*/
 }
+
 .user-navigation-catalog a {
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
 }
-.user-navigation-catalog a:hover {
-color: #ee3643;
+
+.user-navigation-catalog a:hover,
+.user-navigation-catalog a:focus {
+  color: #ee3643;
 }
+
 .user-navigation-catalog a:active {
-color: #32425c;
-opacity: 0.3;
+  color: #32425c;
+  opacity: 0.3;
 }
+
 .main-navigation {
   background-color: #293449;
 }
+
 .user-navigation,
 .site-navigation,
 .breadcrumbs,
@@ -111,45 +145,57 @@ opacity: 0.3;
 .pagination-list {
   list-style: none;
 }
+
 .site-navigation a {
   color: inherit;
 }
-.site-navigation a:hover {
+
+.site-navigation a:hover,
+.site-navigation a:focus {
   background-color: #161d29;
 }
+
 .site-navigation a:active {
   background-color: #1d2739;
   color: rgba(255, 255, 255, 0.50)
 }
+
 .breadcrumbs a,
 .breadcrumbs-current,
 .pagination-list a {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
 }
+
 .promo-materials {
   background-color: #ffbf47;
 }
+
 .promo-instruments {
   background-color: #3bbce3;
 }
+
 .promo-machines {
   background-color: #dc91d8;
 }
+
 .promo-discount {
   background-color: #8ed78f;
 }
+
 .promo-delivery {
   background-color: #ffc047;
 }
+
 .promo span {
   font-size: 24px;
   line-height: 30px;
-  font-style: bold;
+  font-weight: bold;
 }
+
 .promo a {
   font-size: 14px;
   line-height: 18px;
@@ -157,12 +203,16 @@ opacity: 0.3;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.1);
 }
-.promo a:hover {
+
+.promo a:hover,
+.promo a:focus {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 .promo a:active {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 .button {
   font-size: 14px;
   line-height: 17px;
@@ -171,45 +221,56 @@ opacity: 0.3;
   text-transform: uppercase;
   background-color: #ee3643;
   border-radius: 2px; /*проверить*/
+  cursor: pointer;
 }
-.button:hover {
+
+.button:hover,
+.button:focus {
   background-color: #ca2c37;
 }
+
 .button:active {
   background-color: #ba2732;
 }
+
 .slide h3 {
   font-size: 36px;
   line-height: 36px;
-  font-style: bold;
+  font-weight: bold;
   text-transform: uppercase;
 
 }
+
 .slide span {
   font-size: 18px;
   line-height: 24px;
 }
+
 .slider {
   background-color: #685c53; /* На тот случай, если картинки не загрузятся*/
 }
+
 h2 {
   font-size: 30px;
-  line-height: 30x;
+  line-height: 30px;
   color: #000000;
   text-transform: uppercase;
   font-weight: 400;
 }
+
 .h2-catalog {
   color: #32425c;
 }
+
 .filters,
 .sort,
 .sort a,
 .filter-button {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   text-transform: uppercase;
   color: #000000;
 }
+
 .filters h3,
 .sort p,
 .sort a,
@@ -218,11 +279,16 @@ h2 {
   font-size: 13px;
   line-height: 18px;
 }
-.min-value,
-.max-value {
+
+.min-value input,
+.max-value input {
   font-size: 17px;
   line-height: 18px;
+  background-color: #f7f3ec;
+  border: none;
+
 }
+
 .price-legend,
 .producers-legend,
 .charging-legend {
@@ -230,59 +296,75 @@ h2 {
   font-size: 17px;
   line-height: 30px;
 }
+
 .filter-option label {
   font-size: 15px;
   line-height: 20px;
 }
+
 .red a {
   color: #ee3643;
 }
+
 .underline a {
   border-bottom: 1px dotted #ee3643;
   color: rgba(0, 0, 0, 0.3);
 }
+
 .red a:hover,
-.underline a:hover {
+.red a:focus,
+.underline a:hover,
+.underline a:focus {
   color: #000000;
   border-bottom: 1px dotted #ee3643;
 }
+
 .red a:active,
 .underline a:active {
   color: #ee3643;
   border: none;
 }
+
 .popular-items h2 {
   color: #32425c;
   background-color: #f9f5f0;
 }
+
 .catalog {
   list-style: none;
 }
+
 .catalog-item {
   border: 1px solid #eaeaea;
   font-family: 'PT Sans', sans-serif;
-  font-style: bold;
+  font-weight: bold;
   text-align: center;
 }
+
 .catalog-item h3 {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
 }
+
 .catalog-item .price {
   font-size: 17px;
   line-height: 18px;
   }
+
 .catalog-item .old-price {
   color: #a9a9a9;
   text-decoration: line-through;
 }
+
 .catalog-item .new-price {
   background-color: #ee3643;
 }
+
 .hidden {
   display: none;
 }
+
 .buy {
   font-size: 14px;
   line-height: 18px;
@@ -292,7 +374,21 @@ h2 {
   border: 1px solid #63a63e;
   border-radius: 3px;
   border-bottom: 3px solid #367315;
+  cursor: pointer;
 }
+
+.buy:hover,
+.buy:focus {
+  background-color: #5fbb2d;
+  border: 1px solid #5fbb2d;
+  border-bottom: 3px solid #367315;
+}
+
+.buy:active {
+  background-color: #518534;
+  border: none;
+}
+
 .favorite {
   font-size: 14px;
   line-height: 18px;
@@ -301,48 +397,70 @@ h2 {
   background-color: #ffffff;
   border: 3px solid #63a63e;
   border-radius: 3px;
+  cursor: pointer;
 }
+
+.favorite:hover,
+.favorite:focus {
+  border: 3px solid #32425c;
+}
+
+.favorite:active {
+  opacity: 0.3;
+}
+
 .pagination-item a {
   border: 1px solid #e5e5e5;
   border-radius: 2px;
 }
-.pagination-item a:hover {
+
+.pagination-item a:hover,
+.pagination-item a:focus {
   border: 1px solid #bdc6ca;
 }
+
 .pagination-item a:active{
   border: 1px solid #ee3744;
 }
+
 .pagination-item-current a {
   color: #ffffff;
   background-color: #ee3643;
   border: 1px solid #ee3643;
 }
+
 .category-info {
   background-color: #f2f6f8;
 }
+
 .popular-producers h2 {
   color: #32425c;
   background-color: #f9f5f0;
 }
+
 .producers-list {
    list-style: none;
 }
+
 .producer {
   border: 1px solid #eaeaea;
   text-align: center;
 }
+
 .services {
   background-color: #f4f7f9;
 }
+
 .services p,
 .about-company p,
 .main-contacts p,
 .category-info p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
 }
+
 .services h3 {
   font-size: 36px;
   line-height: 36px;
@@ -350,42 +468,54 @@ h2 {
   text-transform: uppercase;
   font-weight: 400;
 }
+
 .services-list {
   list-style: none;
 }
+
 .services-list button {
-  font-style: bold;
+  font-weight: bold;
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
   background-color: #32425c;
 }
-.services-list button:hover {
+
+.services-list button:hover,
+.services-list button:focus {
   background-color: #293449;
 }
+
 .services-list button:active {
   color: #32425c;
   background-color: #ffffff;
+  transform: translateZ(0);
 }
+
 .about-company ul {
   list-style: none;
 }
+
 .about-company li {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
 }
+
 .footer-top-middle {
   background-color: #32425c;
 }
+
 .footer-bottom {
   background-color: #293449;
   font-size: 16px;
   line-height: 18px;
 }
+
 .footer-nav-white {
   list-style: none;
 }
+
 .footer-nav-white a,
 .footer-middle p,
 .footer-middle a {
@@ -393,87 +523,110 @@ h2 {
   line-height: 24px;
   color: inherit;
 }
-.footer-nav-white a:hover {
+
+.footer-nav-white a:hover,
+.footer-nav-white a:focus {
   text-decoration: underline;
 }
+
 .footer-nav-white a:active {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
 }
+
 .footer-nav-yellow {
   list-style: none;
 }
+
 .footer-nav-yellow a {
   color: #ffda96;
 }
-.footer-nav-yellow a:hover {
+
+.footer-nav-yellow a:hover,
+.footer-nav-yellow a:focus {
   text-decoration: underline;
 }
+
 .footer-nav-yellow a:active {
   text-decoration: none;
   color: #ffda96;
   opacity: 0.5;
 }
+
 .footer-email,
 .footer-developer {
   color: #ffda96;
 }
+
 .footer-email:hover,
-.footer-developer:hover {
+.footer-email:focus,
+.footer-developer:hover,
+.footer-developer:focus {
   text-decoration: underline;
 }
+
 .footer-email:active,
 .footer-developer:active {
   text-decoration: none;
   color: #ee3643;
 }
+
 .footer-social a {
   background-color: #212a3a;
   border-radius: 50%;
   color: inherit;
 }
+
 .footer-social a:hover,
+.footer-social a:focus,
 .footer-social a:active {
   background-color: #ee3643;
 }
+
 .modal-feedback {
   border-top: 7px solid #ff5357;
 }
+
 .feedback-form label {
   font-size: 18px;
   line-height: 18px;
   color: #000000;
 }
+
 .feedback-form input,
 .feedback-form textarea {
   border: 2px solid #dee3e4;
   border-radius: 2px;
 }
+
 .feedback-form input::placeholder,
 .feedback-form textarea::placeholder {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
 }
+
 .modal-add-to-cart {
   border-top: 7px solid #ff5357;
 }
+
 .modal-add-to-cart p {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
 }
+
 .modal-buttons {
   background-color: #f1f1f1;
 }
+
 .modal-buttons button {
   font-size: 14px;
   line-height: 18px;
   background-color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 2px;
-
 }
 
 
