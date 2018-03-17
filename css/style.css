@@ -13,17 +13,35 @@ a {
   text-decoration: none;
 }
 
+/*header*/
+
 .main-header {
   background-color: rgb(243, 247, 248);
+  margin-bottom: 60px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
+
+/*header-top*/
 
 .header-top {
   line-height: 18px;
   background-color: #293449;
+  width: 100%;
+  min-height: 40px;
+  display: flex;
 }
 
 .header-top a {
   color: inherit;
+}
+
+.main-header-logo {
+  width: 220px;
+  height: 47px;
 }
 
 .search input {
@@ -68,6 +86,14 @@ a {
   color: rgba(255, 255, 255, 0.51);
 }
 
+/*header-middle*/
+
+.header-middle {
+  width: 940px;
+  min-height: 160px;
+  display: flex;
+}
+
 h1 {
   font-size: 16px;
   line-height: 23px;
@@ -95,6 +121,11 @@ h1 {
 
 .user-name a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
 }
 
 .user-navigation a {
@@ -134,6 +165,9 @@ h1 {
 
 .main-navigation {
   background-color: #293449;
+  width: 940px;
+  min-height: 60px;
+  margin-bottom: 60px;
 }
 
 .user-navigation,
@@ -144,6 +178,15 @@ h1 {
 .charging-type ul,
 .pagination-list {
   list-style: none;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
 }
 
 .site-navigation a {
