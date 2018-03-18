@@ -153,6 +153,7 @@ h1 {
   text-decoration: underline;
 }
 
+
 .user-navigation-catalog a:hover,
 .user-navigation-catalog a:focus {
   color: #ee3643;
@@ -170,6 +171,7 @@ h1 {
   margin-bottom: 60px;
 }
 
+.user-navigation-catalog,
 .user-navigation,
 .site-navigation,
 .breadcrumbs,
@@ -214,7 +216,11 @@ h1 {
   color: #000000;
   text-transform: uppercase;
 }
-
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
 /*main-index*/
 
 .main-index {
@@ -351,6 +357,13 @@ h2 {
 
 .h2-catalog {
   color: #32425c;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.filters {
+  width: 220px;
 }
 
 .filters,
@@ -416,15 +429,27 @@ h2 {
   border: none;
 }
 
-.catalog {
+.catalog-index {
   list-style: none;
   width: 940px;
   min-height: 318px;
   margin: 0;
   padding: 0;
-  margin-bottom: 21px;
+  margin-bottom: 1px;
   display: flex;
   justify-content: space-between;
+}
+.catalog-list {
+  width: 710px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-list .catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item {
@@ -433,6 +458,8 @@ h2 {
   text-align: center;
   width: 220px;
   border: 1px solid #eaeaea;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .catalog-item h3 {
@@ -453,6 +480,15 @@ h2 {
 
 .catalog-item .new-price {
   background-color: #ee3643;
+}
+
+.catalog-catalog {
+  width: 700px;
+}
+.catalog-columns {
+  display: flex;
+  flex-direction: space-around;
+  margin-bottom: 32px;
 }
 
 .hidden {
@@ -503,6 +539,12 @@ h2 {
   opacity: 0.3;
 }
 
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
 .pagination-item a {
   border: 1px solid #e5e5e5;
   border-radius: 2px;
@@ -525,6 +567,11 @@ h2 {
 
 .category-info {
   background-color: #f2f6f8;
+}
+.category-info h2,
+.category-info p {
+  margin: 0;
+  padding: 0;
 }
 
 .popular-producers-head {
