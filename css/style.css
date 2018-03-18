@@ -203,6 +203,8 @@ h1 {
   color: rgba(255, 255, 255, 0.50)
 }
 
+/* main-catalog*/
+
 .breadcrumbs a,
 .breadcrumbs-current,
 .pagination-list a {
@@ -211,6 +213,22 @@ h1 {
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+}
+
+/*main-index*/
+
+.main-index {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo-block {
+  width: 940px;
+  min-height: 410px;
+  margin-bottom: 53px;
+
 }
 
 .promo-materials {
@@ -263,7 +281,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   background-color: #ee3643;
-  border-radius: 2px; /*проверить*/
+  border-radius: 3px; /*проверить*/
   cursor: pointer;
 }
 
@@ -293,13 +311,43 @@ h1 {
   background-color: #685c53; /* На тот случай, если картинки не загрузятся*/
 }
 
+/*popular-items*/
+
 h2 {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
+
+.popular-items-head {
+  width: 940px;
+  min-height: 90px;
+  background-color: #f9f5f0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-items-head h2 {
+  color: #32425c;
+  margin-left: 25px;
+}
+
+.popular-items-head .button {
+  display: inline-block;
+  width: 253px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
+  margin-right: 25px;
+}
+
 
 .h2-catalog {
   color: #32425c;
@@ -368,20 +416,23 @@ h2 {
   border: none;
 }
 
-.popular-items h2 {
-  color: #32425c;
-  background-color: #f9f5f0;
-}
-
 .catalog {
   list-style: none;
+  width: 940px;
+  min-height: 318px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-item {
-  border: 1px solid #eaeaea;
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   text-align: center;
+  width: 220px;
+  border: 1px solid #eaeaea;
 }
 
 .catalog-item h3 {
@@ -476,21 +527,57 @@ h2 {
   background-color: #f2f6f8;
 }
 
-.popular-producers h2 {
-  color: #32425c;
+.popular-producers-head {
+  width: 940px;
+  min-height: 90px;
   background-color: #f9f5f0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular-producers-head h2 {
+  color: #32425c;
+  margin-left: 25px;
+}
+
+.popular-producers-head .button {
+  display: inline-block;
+  width: 253px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
+  margin-right: 25px;
 }
 
 .producers-list {
+   width: 940px;
+   min-height: 310px;
    list-style: none;
+   margin: 0;
+   padding: 0;
+   margin-bottom: 65px;
+   display: flex;
+   flex-wrap: wrap;
+
 }
 
 .producer {
+  width: 218px;
+  height: 145px;
   border: 1px solid #eaeaea;
   text-align: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.producer:nth-child(4n) {
+  margin-right: 0;
 }
 
 .services {
+  width: 100%;
   background-color: #f4f7f9;
 }
 
@@ -513,6 +600,8 @@ h2 {
 }
 
 .services-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -535,8 +624,35 @@ h2 {
   transform: translateZ(0);
 }
 
+.company-info {
+  width: 940px;
+  min-height: 536px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*.about-company {
+  width: 580px;
+  margin-top: 82px;
+}
+
+.about-company h2,
+.about-company p {
+  margin: 0;
+  padding: 0;
+}
+.about-company h2 {
+  margin-bottom: 37px;
+}
+.about-company p:first-of-type {
+  margin-bottom: 35px;
+}*/
+
 .about-company ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .about-company li {
@@ -545,11 +661,36 @@ h2 {
   color: #000000;
 }
 
-.footer-top-middle {
+.main-contacts {
+
+
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-top {
+  width: 100%;
+  min-height: 68px;
   background-color: #32425c;
 }
 
+.footer-middle {
+  width: 100%;
+  background-color: #32425c;
+}
+.footer-top ul,
+.footer-middle ul {
+  margin: 0;
+  padding: 0;
+}
+
 .footer-bottom {
+  width: 100%;
+  min-height: 107px;
   background-color: #293449;
   font-size: 16px;
   line-height: 18px;
