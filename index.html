@@ -10,15 +10,19 @@
   <body>
   	<header class="main-header">
   		<div class="header-top">
+        <div class="container">
   			<a href="#" class="main-header-logo"><img src="img/logo-header.png" alt="Инструменты Техномарт" width="220" height="47"></a>
   			<form class="search" action="https://echo.htmlacademy.ru" method="get">
           <label for="search-field">Поиск:</label>
             <input type="search" id="search-field" name="search-field">
         </form>
+        <div class="header-top-right-side">
   			<a href="#" class="header-favorite">Закладки: 0</a>
   			<a href="#" class="header-cart">Корзина: 0</a>
   			<a href="#" class="header-order">Оформить заказ</a>
+        </div>
   		</div>
+      </div>
   		<div class="header-middle">
   			<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
   			<div class="contacts">
@@ -45,6 +49,7 @@
   	<main class="main-index">
   		<section class="promo-block">
   			<!--<h2 class="visually-hidden">Полулярные категории товаров.</h2>-->
+        <div class="promo-upper-row">
   			<div class="promo promo-materials">
   					<span>Материалы</span>
   					<a href="#">На любой вкус</a>
@@ -57,6 +62,9 @@
   				<span>Техника</span>
   				<a href="#">Для стройки</a>
   			</div>
+        </div>
+        <div class="promo-bottom-row">
+          <div class="promo-right-side">
   			<div class="promo promo-discount">
   				<span>Скидка 50%</span>
   				<a href="#">На 350 товаров</a>
@@ -65,6 +73,7 @@
   				<span>Доставка</span>
   				<a href="#">Бесплатно</a>
   			</div>
+        </div>
           <div class="slider">
                 <input type="radio" id="btn-1" name="toggle" checked>
                 <input type="radio" id="btn-2" name="toggle">
@@ -89,6 +98,7 @@
           <div class="icon-slider-left"></div>
           <div class="icon-slider-right"></div>
           <a href="catalog.html" class="open-catalog button">Открыть каталог</a>
+          </div>
           </div>
           </div>
           </div>
@@ -151,15 +161,18 @@
   					</ul>
   				</section>
   				<section class="services">
+            <div class="container">
   								<h2>Сервисы</h2>
-  								<p>Хороший интернет-магазин отличается от плохого не только ценами!
+  								<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
                                    Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+                                   <div class="services-block">
                                   <ul class="services-list">
                                    	<li><button>Доставка</button></li>
                                    	<li><button>Гарантия</button></li>
                                    	<li><button>Кредит</button></li>
                                    </ul>
                                    <!--Так как по макету видно, что при нажатии клавиши мы не переходим на другую страницу, поставила здесь список без ссылки, а с кнопкой-->
+                                   <div class="setvices-items">
                                    <div class="service-delivery">
                                    <h3>Доставка</h3>
                                    <p>Мы с удовольствием доставим ваш товар прямо
@@ -178,6 +191,9 @@
                                       <p>Залезть в долговую яму стало проще!
                                       Кредитные консультанты придут вам на помощь.</p>
                                       <a href="" class="button">Отправить заявку</a>
+                                    </div>
+                                    </div>
+                                    </div>
                                     </div>
   							</section>
                 <section class="company-info">
@@ -204,6 +220,7 @@
   	</main>
 <footer class="main-footer">
   <div class="footer-top">
+    <div class="container">
     <a href="#" class="footer-logo"><img src="img/logo-footer.png" alt="Инструменты Техномарт" width="220" height="68"></a>
 <ul class="footer-nav-white">
   <li><a href="#">Компания</a></li>
@@ -213,7 +230,9 @@
   <li><a href="#">Контакты</a></li>
 </ul>
   </div>
+  </div>
   <div class="footer-middle">
+    <div class="container">
     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
            <a href="tel:+78125550555" title="Позвонить нам">+7 (812) 555-05-55</a></p>
            <ul class="footer-nav-yellow">
@@ -223,7 +242,9 @@
             <li><a href="#">Спецпредложения</a></li>
            </ul>
   </div>
+</div>
   <div class="footer-bottom">
+    <div class="container">
     <p class="copyright">© 2010–2017 Компания «Техномарт»<br>
                              Все права защищены</p>
             <div class="footer-social">
@@ -234,6 +255,7 @@
           <p>Обратная связь <br><a class="footer-email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
           <p>Разработано - <br><a class="footer-developer" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
   </div>
+</div>
 </footer>
 <section class="modal modal-feedback">
   <!--<h2 class="visually-hidden">Напишите нам</h2>-->

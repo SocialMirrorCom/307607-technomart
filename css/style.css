@@ -12,6 +12,11 @@ body {
 a {
   text-decoration: none;
 }
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
 /* Шапка сайта */
 
@@ -31,12 +36,22 @@ a {
   line-height: 18px;
   background-color: #293449;
   width: 100%;
-  min-height: 40px;
+  height: 42px;
+}
+
+.header-top .container {
   display: flex;
 }
 
 .header-top a {
   color: inherit;
+}
+
+.header-top-right-side {
+  margin-left: auto;
+}
+.header-top-right-side a {
+  width: 150px;
 }
 
 .main-header-logo {
@@ -85,6 +100,11 @@ a {
   background-color: #518534;
   color: rgba(255, 255, 255, 0.51);
 }
+
+.header-top-right-side {
+  margin-left: auto;
+}
+
 
 /* Средний блок шапки сайта */
 
@@ -246,6 +266,12 @@ h1 {
   background-color: #ffc047;
 }
 
+.promo {
+  width: 300px;
+  height: 123px;
+  margin-bottom: 20px;
+}
+
 .promo span {
   font-size: 24px;
   line-height: 30px;
@@ -269,6 +295,19 @@ h1 {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.promo-upper-row,
+.promo-bottom-row  {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-right-side {
+  order: 2;
+  margin-left: 20px;
+
+}
+
+
 .button {
   font-size: 14px;
   line-height: 17px;
@@ -287,6 +326,11 @@ h1 {
 
 .button:active {
   background-color: #ba2732;
+}
+
+.slider-inner {
+  width: 620px
+  height: 266px;
 }
 
 .slide h3 {
@@ -336,10 +380,9 @@ h2 {
 .popular-items-head .button {
   display: inline-block;
   width: 253px;
-  height: 26px;
+  height: 38px;
   margin: 0;
   padding: 0;
-  padding-top: 12px;
   margin-right: 25px;
 }
 
@@ -355,10 +398,13 @@ h2 {
 }
 
 .catalog-item {
+  display: flex;
+  flex-direction: column;
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   text-align: center;
   width: 220px;
+  height: 318px;
   border: 1px solid #eaeaea;
   margin-bottom: 20px;
   margin-right: 20px;
@@ -368,6 +414,13 @@ h2 {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+  margin: 0 20px;
+  padding: 0;
+
+}
+.catalog-item p {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-item .price {
@@ -378,10 +431,13 @@ h2 {
 .catalog-item .old-price {
   color: #a9a9a9;
   text-decoration: line-through;
+  margin-top: 16px;
 }
 
 .catalog-item .new-price {
   background-color: #ee3643;
+  margin-top: auto;
+  margin-bottom: 20px;
 }
 
 
@@ -405,10 +461,9 @@ h2 {
 .popular-producers-head .button {
   display: inline-block;
   width: 253px;
-  height: 26px;
+  height: 38px;
   margin: 0;
   padding: 0;
-  padding-top: 12px;
   margin-right: 25px;
 }
 
@@ -425,12 +480,16 @@ h2 {
 }
 
 .producer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 218px;
   height: 145px;
   border: 1px solid #eaeaea;
   text-align: center;
   margin-bottom: 20px;
   margin-right: 20px;
+
 }
 
 .producer:nth-child(4n) {
@@ -442,6 +501,10 @@ h2 {
   width: 100%;
   background-color: #f4f7f9;
 }
+.services h2 {
+  margin-top: 68px;
+  margin-bottom: 38px;
+}
 
 .services p,
 .about-company p,
@@ -451,6 +514,8 @@ h2 {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 .services h3 {
@@ -459,12 +524,22 @@ h2 {
   color: #32425c;
   text-transform: uppercase;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.services-block {
+  display: flex;
 }
 
 .services-list {
   margin: 0;
   padding: 0;
+  margin-top: 55px;
+  margin-bottom: 100px;
+  margin-right: 80px;
   list-style: none;
+
 }
 
 .services-list button {
@@ -473,6 +548,9 @@ h2 {
   line-height: 30px;
   color: #ffffff;
   background-color: #32425c;
+  width: 240px;
+  height: 60px;
+
 }
 
 .services-list button:hover,
@@ -484,6 +562,10 @@ h2 {
   color: #32425c;
   background-color: #ffffff;
   transform: translateZ(0);
+}
+
+.setvices-items {
+  margin-top: 55px;
 }
 /* Информация о компании и контакты */
 
@@ -713,6 +795,7 @@ h2 {
 
 .filters {
   width: 220px;
+  margin-right: 20px;
 }
 
 .filters,

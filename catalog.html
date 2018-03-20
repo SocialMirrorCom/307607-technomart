@@ -10,14 +10,18 @@
   <body>
   	<header class="main-header">
   		<div class="header-top">
+        <div class="container">
         <a href="#" class="main-header-logo"><img src="img/logo-header.png" alt="Инструменты Техномарт" width="220" height="47"></a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
           <label for="search-field">Поиск:</label>
             <input type="search" id="search-field" name="search-field">
         </form>
+        <div class="header-top-right-side">
         <a href="#" class="header-favorite">Закладки: 0</a>
-        <a href="#" class="header-cart">Корзина: 10</a>
+        <a href="#" class="header-cart">Корзина: 0</a>
         <a href="#" class="header-order">Оформить заказ</a>
+        </div>
+      </div>
       </div>
   		<div class="header-middle">
   			<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
@@ -46,7 +50,8 @@
 </ul>
   	</nav>
   	</header>
-<main class="conteiner">
+<main>
+  <div class="container">
   <ul class="breadcrumbs">
     <li><a href="#" aria-label="Главная страница"></a></li>
     <li><a href="#">Каталог</a></li>
@@ -217,24 +222,28 @@
             <p class="new-price">12500 P.</p>
           </li>
         </ul>
-</section>
-</div>
-<section class="pagination">
+        <div class="pagination">
   <ul class="pagination-list">
     <li class="pagination-item pagination-item-current" aria-label="Страница 1"><a href="#">1</a></li>
     <li class="pagination-item"><a href="#" aria-label="Страница 2">2</a></li>
     <li class="pagination-item"><a href="#" aria-label="Страница 3">3</a></li>
     <li class="pagination-item"><a href="#" aria-label="Следующая страница">Следующая</a></li>
   </ul>
+</div>
 </section>
-<div class="category-info">
+</div>
+</div>
+<section class="category-info">
+  <div class="container">
   <h2>Пара слов о перфораторах</h2>
   <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
   Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-</div>
+  </div>
+</section>
 </main>
 <footer class="main-footer">
   <div class="footer-top">
+    <div class="container">
     <a href="#" class="footer-logo"><img src="img/logo-footer.png" alt="Инструменты Техномарт" width="220" height="68"></a>
 <ul class="footer-nav-white">
   <li><a href="#">Компания</a></li>
@@ -244,7 +253,9 @@
   <li><a href="#">Контакты</a></li>
 </ul>
   </div>
+  </div>
   <div class="footer-middle">
+    <div class="container">
     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
            <a href="tel:+78125550555" title="Позвонить нам">+7 (812) 555-05-55</a></p>
            <ul class="footer-nav-yellow">
@@ -254,7 +265,9 @@
             <li><a href="#">Спецпредложения</a></li>
            </ul>
   </div>
+</div>
   <div class="footer-bottom">
+    <div class="container">
     <p class="copyright">© 2010–2017 Компания «Техномарт»<br>
                              Все права защищены</p>
             <div class="footer-social">
@@ -265,13 +278,30 @@
           <p>Обратная связь <br><a class="footer-email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
           <p>Разработано - <br><a class="footer-developer" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
   </div>
+</div>
 </footer>
-<section class="modal modal-add-to-cart">
-  <p>Товар добавлен в корзину!</p>
-  <div class="modal-buttons">
-  <a href="cart.html" class="button">Оформить заказ</a>
-  <button type="button">Продолжить покупки</button>
-  </div>
+<section class="modal modal-feedback">
+  <!--<h2 class="visually-hidden">Напишите нам</h2>-->
+  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="user-name-label">Ваше имя:</label>
+      <input  class="user-name-field" id="user-name-label" type="text" name="user-name"  placeholder="Представьтесь, пожалуйста">
+    </p>
+    <p>
+      <label for="user-email-label">Ваш e-mail:</label>
+      <input  class="user-email-field" id="user-email-label" type="email" name="user-email"  placeholder="Для отправки ответа">
+    </p>
+    <p>
+      <label for="feedback-area-label">Текст письма:</label>
+      <textarea name="feedback-area" id="feedback-area-label" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+    </p>
+  <button class="button" type="submit">Отправить</button>
+  </form>
+  <button class="modal-close" type="button" aria-label="Закрыть"></button>
+</section>
+<section class="modal modal-map">
+  <!--<h2 class="visually-hidden">Наш адрес</h2>-->
+  <p><img src="img/map-popup.png" alt="Россия, г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="940" height="446"></p>
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
   </body>
