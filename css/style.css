@@ -1034,14 +1034,22 @@ h2 {
 /* Номера страниц*/
 
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-bottom: 60px;
 }
 
 .pagination-item a {
+  padding: 9px 15px;
+  margin-right: 10px;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
+}
+
+.following-page a {
+  padding: 9px 30px;
 }
 
 .pagination-item a:hover,
@@ -1059,6 +1067,7 @@ h2 {
   border: 1px solid #ee3643;
 }
 
+
 /*Информация о категории*/
 
 .category-info {
@@ -1070,6 +1079,14 @@ h2 {
   padding: 0;
 }
 
+.category-info h2 {
+  padding-top: 63px;
+  padding-bottom: 30px;
+}
+
+.category-info p {
+  padding-bottom: 73px;
+}
 
 
 
