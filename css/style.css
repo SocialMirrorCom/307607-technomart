@@ -1037,18 +1037,19 @@ h2 {
 }
 
 
-
-
-
-
-
 /* Заголовок Каталога */
+
+.catalog-header {
+  width: 940px;
+  margin-bottom: 20px;
+  background-color: #f2f6f8;
+}
 
 .h2-catalog {
   color: #32425c;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  padding: 30px;
 }
 
 /* Раздел фильтров и сотрировки */
@@ -1097,6 +1098,67 @@ h2 {
   font-size: 15px;
   line-height: 20px;
 }
+
+/* Сортировка*/
+
+.sort {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+  min-height: 38px;
+  background-color: #f7f3ec;
+  border-radius: 3px;
+}
+.sort p {
+  margin-left: 19px;
+}
+
+.sort-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 17px;
+
+
+}
+.sort-list li {
+  margin-right: 46px;
+}
+
+.icon-up-dir {
+  position: relative;
+
+}
+
+.icon-up-dir a::before {
+  position: absolute;
+  content: "";
+  top: -6px;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/icon-up-dir-red.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.icon-down-dir {
+  position: relative;
+}
+
+.icon-down-dir a::before {
+  position: absolute;
+  content: "";
+  top: -6px;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.35;
+}
+
 
 .red a {
   color: #ee3643;
