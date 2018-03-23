@@ -982,7 +982,7 @@ h2 {
 /* Хлебные Крошки */
 
 .breadcrumbs a,
-.breadcrumbs-current,
+.breadcrumb-current,
 .pagination-list a {
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
@@ -991,10 +991,56 @@ h2 {
   text-transform: uppercase;
 }
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
 }
+
+.breadcrumbs li:last-child {
+  padding-top: 1px;
+}
+
+
+.breadcrumb-item {
+  position: relative;
+  margin-right: 40px;
+}
+
+.breadcrumb-item::after {
+  position: absolute;
+  content: "";
+  right: -24px;
+  top: 3px;
+  width: 8px;
+  height: 12px;
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.breadcrumb-main {
+  padding-right: 15px;
+}
+
+.breadcrumb-main::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 12px;
+  top: 2px;
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+
+
+
+
 
 /* Заголовок Каталога */
 
@@ -1157,10 +1203,10 @@ h2 {
 }
 
 .catalog-item .actions{
-    display:none;
+    display: none;
 }
 .catalog-item:hover .actions{
-    display:block;
+    display: block;
 }
 
 /* Номера страниц*/
