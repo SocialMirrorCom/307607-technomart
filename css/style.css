@@ -404,28 +404,12 @@ h1 {
   margin-bottom: 53px;
 
 }
-
-.promo-materials {
-  background-color: #ffbf47;
-}
-
-.promo-instruments {
-  background-color: #3bbce3;
-}
-
-.promo-machines {
-  background-color: #dc91d8;
-}
-
-.promo-discount {
-  background-color: #8ed78f;
-}
-
-.promo-delivery {
-  background-color: #ffc047;
-}
-
 .promo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 300px;
   height: 123px;
   margin-bottom: 20px;
@@ -435,14 +419,24 @@ h1 {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
+  margin-left: 23px;
+  margin-top: 23px;
+  margin-bottom: 12px;
 }
 
 .promo a {
+  display: block;
   font-size: 14px;
   line-height: 18px;
   color: inherit;
+  width: 135px;
+  min-height: 28px;
+  text-align: center;
+  padding-top: 10px;
+  margin-left: 25px;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
 }
 
 .promo a:hover,
@@ -464,6 +458,98 @@ h1 {
   order: 2;
   margin-left: 20px;
 
+}
+
+.promo-materials {
+  background-color: #ffbf47;
+}
+
+.promo-materials::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: 0px;
+  width: 60px;
+  height: 59px;
+  background-image: url("../img/new-flag.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo-materials::after {
+  position: absolute;
+  content: "";
+  top: 31px;
+  right: 43px;
+  width: 47px;
+  height: 70px;
+  background-image: url("../img/icon-materials.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo-instruments {
+  background-color: #3bbce3;
+}
+
+.promo-instruments::after {
+  position: absolute;
+  content: "";
+  top: 33px;
+  right: 28px;
+  width: 77px;
+  height: 63px;
+  background-image: url("../img/icon-instruments.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo-machines {
+  background-color: #dc91d8;
+}
+
+.promo-machines::after {
+  position: absolute;
+  content: "";
+  top: 31px;
+  right: 30px;
+  width: 80px;
+  height: 64px;
+  background-image: url("../img/icon-machine.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo-discount {
+  background-color: #8ed78f;
+}
+
+.promo-discount::after {
+  position: absolute;
+  content: "";
+  top: 26px;
+  right: 45px;
+  width: 61px;
+  height: 75px;
+  background-image: url("../img/icon-discount.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo-delivery {
+  background-color: #ffc047;
+}
+
+.promo-delivery::after {
+  position: absolute;
+  content: "";
+  top: 32px;
+  right: 31px;
+  width: 80px;
+  height: 65px;
+  background-image: url("../img/icon-delivery.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 
@@ -570,7 +656,6 @@ h2 {
 }
 .catalog-item .flag {
   position: absolute;
-  color: black; /* временно */
   top: -1px;
   right: -1px;
   width: 60px;
