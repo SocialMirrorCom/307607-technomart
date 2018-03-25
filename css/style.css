@@ -678,21 +678,47 @@ h1 {
   height: 266px;
 }
 
-.slide h3 {
+.slide {
+  position: relative;
+}
+
+.slide-text {
+  position: absolute;
+  top: 21px;
+  left: 24px;
+  z-index: 10;
+}
+
+.open-catalog {
+  position: absolute;
+  bottom: 23px;
+  left: 25px;
+  z-index: 10;
+}
+
+.slide-text h3 {
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
   text-transform: uppercase;
-
+  margin: 0;
+  padding: 0;
 }
 
-.slide span {
+.slide-text span {
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
+  padding: 0;
 }
 
-.slider {
-  background-color: #685c53; /* На тот случай, если картинки не загрузятся*/
+.slide .button {
+  width: 195px;
+
+}
+
+.slide-one {
+  display: none;
 }
 
 /* Раздел популярные товары на Главной странице */
