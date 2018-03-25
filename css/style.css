@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: 'Cuprum', 'PT Sans', 'Arial', sans-serif;
   font-size: 17px;
-  line-height: 17px;
+  line-height: 18px;
   font-weight: 400;
   color: #ffffff;
   background-color: #ffffff;
@@ -65,16 +65,21 @@ input[type="radio"].visually-hidden {
 
 .header-top .container {
   display: flex;
+  justify-content: space-between;
+
+}
+
+.logo-search-block {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .header-top a {
+  padding: 0;
+  margin: 0;
   color: inherit;
 }
-
-/*.header-top-right-side {
-  margin-left: auto;
-}*/
 
 .main-header-logo {
   width: 220px;
@@ -82,9 +87,39 @@ input[type="radio"].visually-hidden {
 }
 
 .search input {
+  width: 170px;
+  height: 42px;
   background-color: transparent;
   border: none;
 }
+
+.search label {
+  position: relative;
+  padding-left: 49px;
+}
+
+.search label::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 17px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/icon-search-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.search label:hover::before,
+.search label:focus::before {
+ opacity: 1;
+}
+
+.search label:active::before {
+ background-image: url("../img/icon-search-red.svg");
+}
+
 
 .search:hover,
 .search:focus {
@@ -94,6 +129,21 @@ input[type="radio"].visually-hidden {
 /*Эффект с исчезновением слова Поиск доделаю, когда буду знать как*/
 .search:active{
   background-color: #ffffff;
+}
+
+.header-top-right-side {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style: none;
+}
+.header-top-right-side a {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  vertical-align: middle;
 }
 
 .header-favorite:hover,
@@ -109,9 +159,58 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.header-order {
+
+.header-favorite a,
+.header-cart a {
+  position: relative;
+  padding-left: 45px;
+  padding-right: 30px;
+}
+
+.header-favorite a::before,
+.header-cart a::before {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 16px;
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.header-favorite a::before {
+background-image: url("../img/icon-bookmark1.svg");
+}
+
+.header-cart a::before {
+  background-image: url("../img/icon-cart.svg");
+}
+
+.header-favorite a:hover::before,
+.header-cart a:hover::before,
+.header-favorite a:focus::before,
+.header-cart a:focus::before {
+  opacity: 1;
+}
+
+.header-favorite a:active::before,
+.header-cart a:active::before {
+  opacity: 0.3;
+}
+
+.header-cart-catalog {
+  background-color: #ee3643;
+}
+
+
+.header-order a {
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #63a63e;
 }
+
 
 .header-order:hover,
 .header-order:focus {
@@ -123,9 +222,7 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.51);
 }
 
-.header-top-right-side {
-  margin-left: auto;
-}
+
 
 
 /* Средний блок шапки сайта */
@@ -294,7 +391,7 @@ h1 {
   position: relative;
 }
 
-.user-navigation .login-link-icon::before {
+.user-navigation .login-link-icon a::before {
   position: absolute;
   content: "";
   left: 24px;
@@ -307,12 +404,12 @@ h1 {
   opacity: 0.3;
 }
 
-.user-navigation .login-link-icon:hover::before,
-.user-navigation .login-link-icon:focus::before {
+.user-navigation .login-link-icon a:hover::before,
+.user-navigation .login-link-icon a:focus::before {
   opacity: 1;
 }
 
-.user-navigation .login-link-icon:active::before {
+.user-navigation .login-link-icon a:active::before {
   opacity: 0.3;
 }
 
@@ -555,7 +652,7 @@ h1 {
 
 .button {
   font-size: 14px;
-  line-height: 17px;
+  line-height: 18px;
   color: inherit;
   text-align: center;
   text-transform: uppercase;
@@ -623,11 +720,12 @@ h2 {
 }
 
 .popular-items-head .button {
-  display: inline-block;
+  display: block;
   width: 253px;
-  height: 38px;
   margin: 0;
   padding: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-right: 25px;
 }
 
@@ -760,9 +858,10 @@ h2 {
 .popular-producers-head .button {
   display: inline-block;
   width: 253px;
-  height: 38px;
   margin: 0;
   padding: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-right: 25px;
 }
 
