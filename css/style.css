@@ -1023,34 +1023,65 @@ h2 {
   background-color: #32425c;
 }
 
+.footer-top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav-white {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav-white a,
+.footer-middle p,
+.footer-middle a {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: inherit;
+}
+.footer-nav-white a {
+  display: block;
+  padding-left: 60px;
+  vertical-align: middle;
+}
+
+
+
 .footer-middle {
+  padding-top: 30px;
+  padding-bottom: 50px;
   width: 100%;
   background-color: #32425c;
 }
+
 .footer-top ul,
 .footer-middle ul {
   margin: 0;
   padding: 0;
 }
 
-.footer-bottom {
-  width: 100%;
-  min-height: 107px;
-  background-color: #293449;
-  font-size: 16px;
-  line-height: 18px;
+.footer-middle .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav-yellow {
+  display: flex;
+  justify-content: space-between;
+
+}
+.footer-nav-yellow a {
+  display: block;
+  padding-left: 60px;
+  vertical-align: middle;
 }
 
 .footer-nav-white {
   list-style: none;
-}
-
-.footer-nav-white a,
-.footer-middle p,
-.footer-middle a {
-  font-size: 18px;
-  line-height: 24px;
-  color: inherit;
 }
 
 .footer-nav-white a:hover,
@@ -1082,6 +1113,29 @@ h2 {
   opacity: 0.5;
 }
 
+.footer-bottom {
+  width: 100%;
+  min-height: 107px;
+  background-color: #293449;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-bottom .container {
+  display: flex;
+  min-height: 107px;
+  align-items: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-feedback {
+  margin-right: 53px;
+}
+
 .footer-email,
 .footer-developer {
   color: #ffda96;
@@ -1100,11 +1154,36 @@ h2 {
   color: #ee3643;
 }
 
-.footer-social a {
+.footer-social {
+  width: 135px;
+  text-align: center;
+  margin-left: 160px;
+  margin-right: 120px;
+
+}
+.footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 131px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   background-color: #212a3a;
   border-radius: 50%;
   color: inherit;
+
 }
+
+
 
 .footer-social a:hover,
 .footer-social a:focus,
