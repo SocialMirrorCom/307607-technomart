@@ -651,11 +651,14 @@ h1 {
 
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   line-height: 18px;
   color: inherit;
-  text-align: center;
   text-transform: uppercase;
+  height: 38px;
   background-color: #ee3643;
   border-radius: 3px; /*проверить*/
   cursor: pointer;
@@ -720,12 +723,9 @@ h2 {
 }
 
 .popular-items-head .button {
-  display: block;
   width: 253px;
   margin: 0;
   padding: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
   margin-right: 25px;
 }
 
@@ -856,12 +856,9 @@ h2 {
 }
 
 .popular-producers-head .button {
-  display: inline-block;
   width: 253px;
   margin: 0;
   padding: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
   margin-right: 25px;
 }
 
@@ -984,29 +981,80 @@ h2 {
 .about-company p {
   margin: 0;
   padding: 0;
-}
-.about-company h2 {
-  margin-bottom: 37px;
-}
-.about-company p:first-of-type {
-  margin-bottom: 35px;
-}*/
+*/
 
-.about-company ul {
+.about-company {
+  width: 520px;
+}
+.about-company p,
+.main-contacts p {
+    margin: 0;
+    padding: 0;
+}
+
+.about-company p:first-of-type {
+  margin-bottom: 32px;
+}
+
+.about-company p:last-of-type {
+  margin-bottom: 27px;
+}
+
+.company-partners-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.about-company li {
+.company-partners-list li {
+  position: relative;
   font-size: 18px;
   line-height: 20px;
+  padding-left: 36px;
+  margin-bottom: 20px;
   color: #000000;
 }
 
+.company-partners-list li::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+
+}
+
+.about-company .button {
+  width: 220px;
+  margin-top: 37px;
+  margin-bottom: 86px;
+}
+
+.about-company h2,
+.main-contacts h2 {
+    margin: 0;
+    padding: 0;
+    margin-top: 77px;
+    margin-bottom: 32px;
+}
+
+
 .main-contacts {
+ width: 300px;
 
+}
 
+.main-contacts p {
+    margin-bottom: 36px;
+}
+
+.main-contacts img {
+    margin-bottom: 40px;
+}
+.main-contacts .button {
+   margin-bottom: 86px;
 }
 
 /* Подвал сайта*/
