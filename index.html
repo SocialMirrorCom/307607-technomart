@@ -168,29 +168,31 @@
   								<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
                                    Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                                    <div class="services-block">
+                                    <input type="radio" name="delivery" class="visually-hidden" id="delivery-radio">
+                                     <input type="radio" name="guarantee" class="visually-hidden" id="guarantee-radio">
+                                      <input type="radio" name="credit" class="visually-hidden" id="credit-radio">
                                   <ul class="services-list">
-                                   	<li><button>Доставка</button></li>
-                                   	<li><button>Гарантия</button></li>
-                                   	<li><button>Кредит</button></li>
-                                   </ul>
-                                   <!--Так как по макету видно, что при нажатии клавиши мы не переходим на другую страницу, поставила здесь список без ссылки, а с кнопкой-->
+<li><label for="delivery-radio">Доставка</label></li>
+<li><label for="guarantee-radio">Гарантия</label></li>
+<li><label for="credit-radio">Кредит</label></li>
+</ul>
                                    <div class="setvices-items">
-                                   <div class="service-delivery">
+                                   <div class="service-item service-delivery" title="Доставка">
                                    <h3>Доставка</h3>
                                    <p>Мы с удовольствием доставим ваш товар прямо
-                                      к вашему подъезду совершенно бесплатно!
-                                      Ведь мы неплохо заработаем,
+                                      к вашему подъезду совершенно бесплатно!<br>
+                                      Ведь мы неплохо заработаем,<br>
                                       поднимая его на ваш этаж!</p>
                                    </div>
-                                   <div class="service-guarantee">
+                                   <div class="service-item service-guarantee" title="Гарантия">
                                       <h3>Гарантия</h3>
-                                      <p>Если купленный у нас товар поломается или заискрит,
-                                      а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                                      <p>Если купленный у нас товар поломается или заискрит,<br>
+                                      а также в случае пожара, спровоцированного его возгаранием,<br>  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>сгоревший товар на новый.<br>
                                       Дом уж восстановите как-нибудь сами.</p>
                                     </div>
-                                    <div class="service-credit">
+                                    <div class="service-item service-credit" title="Кредит">
                                       <h3>Кредит</h3>
-                                      <p>Залезть в долговую яму стало проще!
+                                      <p>Залезть в долговую яму стало проще!<br>
                                       Кредитные консультанты придут вам на помощь.</p>
                                       <a href="" class="button">Отправить заявку</a>
                                     </div>

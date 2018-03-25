@@ -937,31 +937,130 @@ h2 {
 
 }
 
-.services-list button {
+.services-list label {
+  display: inline-block;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
   background-color: #32425c;
-  width: 240px;
-  height: 60px;
-
+  padding-top: 17px;
+  padding-left: 22px;
+  width: 218px;
+  height: 43px;
+  border-bottom: 1px solid #4d637b;
+  cursor: pointer;
 }
 
-.services-list button:hover,
-.services-list button:focus {
+
+
+.services-list label:hover,
+.services-list label:focus {
   background-color: #293449;
 }
 
-.services-list button:active {
+.services-list label:active,
+.services-list label:checked {
   color: #32425c;
   background-color: #ffffff;
-  transform: translateZ(0);
+  border-bottom: none;
 }
+
 
 .setvices-items {
   margin-top: 55px;
 }
+
+.service-item {
+  position: relative;
+  z-index: 10;
+}
+
+.service-item h3 {
+  margin-bottom: 30px;
+}
+
+.service-delivery {
+  display: none;
+}
+
+.service-delivery p {
+  padding-right: 340px;
+}
+
+.service-delivery::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 486px;
+  height: 261px;
+  background-image: url("../img/delivery.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 0;
+}
+
+.service-guarantee {
+  display: none;
+}
+
+.service-guarantee p {
+  padding-right: 240px;
+}
+
+.service-guarantee::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 389px;
+  height: 283px;
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 0;
+}
+
+
+.service-credit {
+  display: none;
+}
+.service-credit p {
+  padding-right: 340px;
+}
+
+.service-credit::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 465px;
+  height: 285px;
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 0;
+}
+
+.service-credit .button {
+  margin-top: 25px;
+  width: 195px;
+}
+
+input[id="credit-radio"]:checked ~ .setvices-items .service-credit {
+  display: block;
+}
+input[id="guarantee-radio"]:checked ~ .setvices-items .service-guarantee {
+  display: block;
+}
+input[id="delivery-radio"]:checked ~ .setvices-items .service-delivery {
+  display: block;
+}
+
+
+
+
 /* Информация о компании и контакты */
 
 .company-info {
@@ -1416,6 +1515,8 @@ h2 {
   color: #000000;
 }
 
+
+
 .h3-filter h3,
 .sort p,
 .sort a,
@@ -1592,6 +1693,13 @@ h2 {
   background-color: #f7f3ec;
   border-radius: 3px;
 }
+
+/*.sort p,
+.sort a {
+  margin: 0;
+  padding: 0;
+}*/
+
 .sort p {
   margin-left: 19px;
 }
