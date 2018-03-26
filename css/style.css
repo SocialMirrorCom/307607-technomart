@@ -676,10 +676,32 @@ h1 {
 .slider-inner {
   width: 620px
   height: 266px;
+  overflow: hidden;
 }
 
 .slide {
   position: relative;
+}
+
+.icon-slider-left,
+.icon-slider-right {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  z-index: 50;
+}
+.icon-slider-left {
+  bottom: 40px;
+  left: 295px;
+}
+
+.icon-slider-right {
+  bottom: 40px;
+  left: 315px;
 }
 
 .slide-text {
@@ -720,6 +742,59 @@ h1 {
 .slide-one {
   display: none;
 }
+
+.slide-one .icon-slider-left {
+  background-color: #ee3643;
+}
+
+
+.slide-two {
+  display: none;
+}
+
+.slide-two .icon-slider-right {
+  background-color: #ee3643;
+}
+
+
+.slider-control {
+  position: relative;
+  cursor: pointer;
+}
+
+.slider-control .slider-control-left {
+  position: absolute;
+  top: 115px;
+  left: 25px;
+  width: 25px;
+  height: 42px;
+  background-image: url("../img/icon-slider-left.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 30;
+}
+
+.slider-control .slider-control-right {
+  position: absolute;
+  top: 115px;
+  right: -600px;
+  width: 25px;
+  height: 42px;
+  background-image: url("../img/icon-slider-right.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 40;
+}
+
+input[id="btn-1"]:checked ~ .slider-inner .slide-one {
+  display: block;
+}
+
+input[id="btn-2"]:checked ~ .slider-inner .slide-two {
+  display: block;
+  transform: translate(0, -100%);
+}
+
 
 /* Раздел популярные товары на Главной странице */
 
@@ -954,12 +1029,25 @@ h2 {
 }
 
 .services-list {
+  position: relative;
   margin: 0;
   padding: 0;
   margin-top: 55px;
   margin-bottom: 100px;
   margin-right: 80px;
   list-style: none;
+
+}
+.services-list::after {
+  position: absolute;
+  content: "";
+  top: -40px;
+  right: 0;
+  width: 10px;
+  height: 272px;
+  background-image: url("../img/shadow_for_services.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 
 }
 
@@ -999,16 +1087,22 @@ h2 {
 
 .service-item {
   position: relative;
-  z-index: 10;
 }
 
 .service-item h3 {
   margin-bottom: 30px;
 }
 
-.service-delivery {
+.setvices-items .service-delivery {
   display: none;
 }
+/*.service-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  z-index: 10;
+}*/
 
 .service-delivery p {
   padding-right: 340px;
@@ -1027,7 +1121,7 @@ h2 {
   z-index: 0;
 }
 
-.service-guarantee {
+.setvices-items .service-guarantee {
   display: none;
 }
 
@@ -1049,7 +1143,7 @@ h2 {
 }
 
 
-.service-credit {
+.setvices-items .service-credit {
   display: none;
 }
 .service-credit p {
