@@ -1488,20 +1488,82 @@ input[id="delivery-radio"]:checked ~ .setvices-items .service-delivery {
 
 /*Модальные окна*/
 
-.modal-feedback {
-  border-top: 7px solid #ff5357;
+.modal {
+  position: fixed;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
+
+.modal-feedback {
+  top: 120px;
+  left: 50%;
+  margin-left: -230px;
+  width: 620px;
+  border-top: 7px solid #ff5357;
+  background-color: #ffffff;
+}
+.modal-feedback p,
+.modal-feedback label,
+.modal-feedback input,
+.modal-feedback form {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-feedback .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 460px;
+
+}
+
+.name-email {
+  display: flex;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
 
 .feedback-form label {
   font-size: 18px;
   line-height: 18px;
   color: #000000;
+
 }
 
-.feedback-form input,
+.feedback-form input[type="text"] {
+  margin-right: 20px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+  width: 220px;
+  height: 38px;
+
+
+
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
 .feedback-form textarea {
+  margin-top: 10px;
+  padding-left: 13px;
+  box-sizing: border-box;
   border: 2px solid #dee3e4;
   border-radius: 2px;
+}
+
+.feedback-form textarea {
+  width: 460px;
+  height: 114px;
+  padding-top: 10px;
+  margin-bottom: 37px;
 }
 
 .feedback-form input::placeholder,
@@ -1511,6 +1573,46 @@ input[id="delivery-radio"]:checked ~ .setvices-items .service-delivery {
   line-height: 18px;
   color: #a9a9a9;
 }
+
+.modal-button {
+  background-color: #f4f4f4;
+}
+.modal-button .button {
+  margin-top: 38px;
+  margin-bottom: 38px;
+  border: none;
+}
+
+.modal-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -2px;
+  width: 19px;
+  height: 3px;
+  background-color: #ee3643;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
 
 .modal-add-to-cart {
   border-top: 7px solid #ff5357;
@@ -2110,6 +2212,8 @@ input[id="delivery-radio"]:checked ~ .setvices-items .service-delivery {
 .category-info p {
   padding-bottom: 73px;
 }
+
+/* Модальное окно Обратная связь */
 
 
 

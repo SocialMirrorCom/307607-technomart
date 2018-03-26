@@ -310,8 +310,11 @@
 </div>
 </footer>
 <section class="modal modal-feedback">
+  <div class="modal-form">
  <h2 class="visually-hidden">Напишите нам</h2>
   <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    <div class="container">
+    <div class="name-email">
     <p>
       <label for="user-name-label">Ваше имя:</label>
       <input  class="user-name-field" id="user-name-label" type="text" name="user-name"  placeholder="Представьтесь, пожалуйста">
@@ -320,12 +323,21 @@
       <label for="user-email-label">Ваш e-mail:</label>
       <input  class="user-email-field" id="user-email-label" type="email" name="user-email"  placeholder="Для отправки ответа">
     </p>
+    </div>
     <p>
       <label for="feedback-area-label">Текст письма:</label>
       <textarea name="feedback-area" id="feedback-area-label" cols="30" rows="10" placeholder="В свободной форме"></textarea>
     </p>
+    </div>
+    </form>
+    </div>
+
+<div class="modal-button">
+  <div class="container">
   <button class="button" type="submit">Отправить</button>
-  </form>
+</div>
+  </div>
+ </div>
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
 <section class="modal modal-map">
