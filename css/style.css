@@ -1494,9 +1494,10 @@ input[id="delivery-radio"]:checked ~ .setvices-items .service-delivery {
 }
 
 .modal-feedback {
+  display: none;
   top: 120px;
   left: 50%;
-  margin-left: -230px;
+  margin-left: -310px;
   width: 620px;
   border-top: 7px solid #ff5357;
   background-color: #ffffff;
@@ -1592,6 +1593,7 @@ input[id="delivery-radio"]:checked ~ .setvices-items .service-delivery {
   font-size: 0;
   border: 0;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .modal-close::before,
@@ -1613,6 +1615,21 @@ input[id="delivery-radio"]:checked ~ .setvices-items .service-delivery {
   transform: rotate(-45deg);
 }
 
+.modal-map {
+  display: none;
+  top: 120px;
+  left: 50%;
+  margin-left: -470px;
+  width: 940px;
+  height: 446px;
+  background-color: #ffffff;
+  z-index: 60;
+}
+
+.modal-map p {
+  margin: 0;
+  padding: 0;
+}
 
 .modal-add-to-cart {
   border-top: 7px solid #ff5357;
