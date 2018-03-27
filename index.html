@@ -234,7 +234,7 @@
  	<h2>Контакты</h2>
 	<p>Вы можете забрать товар сами,<br>
        заехав в наш офис:</p>
-	<img src="img/map.png" alt="Россия, г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300" height="158">
+	<a class="contacts-button-map" href="#"><img src="img/map.png" alt="Россия, г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300" height="158"></a>
 	<a href="#" class="button write-us-button">Заблудились? Напишите нам</a>
 </div>
 </section>
@@ -345,6 +345,9 @@
 </section>
 <section class="modal modal-map">
  <h2 class="visually-hidden">Наш адрес</h2>
+ <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123554!2d30.32089461551221!3d59.93879686904862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522172635404" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940" height="446" allowfullscreen></iframe>
+
   <p><img src="img/map-popup.png" alt="Россия, г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="940" height="446"></p>
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
@@ -405,6 +408,31 @@
       if (popup.classList.contains("modal-show")) {
         popup.classList.remove("modal-show");
         popup.classList.remove("modal-error");
+      }
+    }
+  });
+
+
+  var mapLink = document.querySelector(".contacts-button-map");
+
+  var mapPopup = document.querySelector(".modal-map");
+  var mapClose = mapPopup.querySelector(".modal-close");
+
+   mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-show");
+  });
+
+  mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    evt.preventDefault();
+    if (evt.keyCode === 27) {
+      if (mapPopup.classList.contains("modal-show")) {
+        mapPopup.classList.remove("modal-show");
       }
     }
   });
