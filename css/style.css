@@ -1545,9 +1545,6 @@ input[id="delivery-radio"]:checked ~ .setvices-items .service-delivery {
 .feedback-form input[type="email"] {
   width: 220px;
   height: 38px;
-
-
-
 }
 
 .feedback-form input[type="text"],
@@ -1632,25 +1629,76 @@ input[id="delivery-radio"]:checked ~ .setvices-items .service-delivery {
 }
 
 .modal-add-to-cart {
+  top: 120px;
+  left: 50%;
+  margin-left: -310px;
+  width: 620px;
   border-top: 7px solid #ff5357;
+  background-color: #ffffff;
+}
+
+.modal-add-to-cart-text {
+  position: relative;
+}
+
+.modal-add-to-cart-text::before {
+  position: absolute;
+  content: "";
+  top: 48px;
+  left: 81px;
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/form-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 70;
+}
+
+
+.modal-add-to-cart p,
+.modal-add-to-cart a {
+  margin: 0;
+  padding: 0;
 }
 
 .modal-add-to-cart p {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  padding-top: 67px;
+  padding-bottom: 67px;
+  padding-left: 179px;
 }
 
 .modal-buttons {
   background-color: #f1f1f1;
 }
 
+.modal-buttons .container {
+  display: flex;
+  justify-content: space-between;
+  width: 460px;
+
+
+}
+.modal-buttons .button {
+  width: 220px;
+  margin-top: 38px;
+  margin-bottom: 38px;
+
+}
+
 .modal-buttons button {
   font-size: 14px;
   line-height: 18px;
+  width: 220px;
+  height: 38px;
+  margin-top: 38px;
+  margin-bottom: 38px;
   background-color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 /* Страница Каталог */
@@ -2230,7 +2278,6 @@ input[id="delivery-radio"]:checked ~ .setvices-items .service-delivery {
   padding-bottom: 73px;
 }
 
-/* Модальное окно Обратная связь */
 
 
 
