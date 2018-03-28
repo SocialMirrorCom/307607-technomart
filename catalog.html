@@ -336,5 +336,16 @@
   </div>
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
+<script>
+   var buy = document.querySelector(".buy");
+
+
+
+   buy.addEventListener("click", function (evt) {
+     evt.preventDefault();
+     popup.classList.add("modal-show");
+   });
+
+   </script>
   </body>
 </html>

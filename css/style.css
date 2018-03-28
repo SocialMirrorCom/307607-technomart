@@ -1112,9 +1112,6 @@ h2 {
   margin-top: 55px;
 }
 
-.service-item {
-  position: relative;
-}
 
 .service-item h3 {
   margin-bottom: 30px;
@@ -1122,72 +1119,41 @@ h2 {
 
 .setvices-items .service-delivery {
   display: none;
+  min-height: 280px;
+  background-image: url("../img/delivery.png");
+  background-repeat: no-repeat;
+  background-position: 153px 26px;
 }
-/*.service-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 400px;
-  z-index: 10;
-}*/
+
 
 .service-delivery p {
   padding-right: 340px;
 }
 
-.service-delivery::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  width: 486px;
-  height: 261px;
-  background-image: url("../img/delivery.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  z-index: 0;
-}
+
 
 .setvices-items .service-guarantee {
   display: none;
+  min-height: 280px;
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 223px 0;
 }
 
 .service-guarantee p {
   padding-right: 240px;
 }
 
-.service-guarantee::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  width: 389px;
-  height: 283px;
-  background-image: url("../img/guarantee.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  z-index: 0;
-}
-
 
 .setvices-items .service-credit {
   display: none;
+  min-height: 280px;
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  background-position: 152px 0;
 }
 .service-credit p {
   padding-right: 340px;
-}
-
-.service-credit::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  width: 465px;
-  height: 285px;
-  background-image: url("../img/credit.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  z-index: 0;
 }
 
 .service-credit .button {
@@ -1195,16 +1161,31 @@ h2 {
   width: 195px;
 }
 
-input[id="credit-radio"]:checked ~ .setvices-items .service-credit {
+input[id="credit-radio"]:checked ~ .service-credit {
   display: block;
 }
-input[id="guarantee-radio"]:checked ~ .setvices-items .service-guarantee {
-  display: block;
+input[id="credit-radio"]:checked ~ .service-guarantee,
+input[id="credit-radio"]:checked ~ .service-delivery {
+  display: none;
 }
-input[id="delivery-radio"]:checked ~ .setvices-items .service-delivery {
+
+input[id="guarantee-radio"]:checked ~ .service-guarantee {
   display: block;
 }
 
+input[id="guarantee-radio"]:checked ~ .service-credit,
+input[id="guarantee-radio"]:checked ~ .service-delivery {
+display: none;
+}
+
+input[id="delivery-radio"]:checked ~ .service-delivery {
+  display: block;
+}
+
+input[id="delivery-radio"]:checked ~ .service-credit,
+input[id="delivery-radio"]:checked ~ .service-guarantee {
+  display: none;
+}
 
 
 
