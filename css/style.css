@@ -892,7 +892,7 @@ h2 {
   border: 1px solid #eaeaea;
   margin-bottom: 20px;
   margin-right: 20px;
-  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0);
+  box-shadow: 0 10px 25px 0 transparent;
 }
 .catalog-item .flag {
   position: absolute;
@@ -2276,7 +2276,7 @@ input[id="delivery-radio"]:checked ~ .service-guarantee {
 
 .catalog-item:hover,
 .catalog-item:focus  {
-  border: none;
+  border-color: #ffffff;
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
