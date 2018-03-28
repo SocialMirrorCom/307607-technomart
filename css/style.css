@@ -932,7 +932,7 @@ h2 {
 }
 
 .catalog-item .catalog-item-image img {
-  max-width: 100%
+  width: 100%
 }
 
 
@@ -1818,19 +1818,14 @@ input[id="delivery-radio"]:checked ~ .service-guarantee {
 }
 
 .breadcrumb-main {
-  padding-right: 15px;
-}
-
-.breadcrumb-main::before {
-  position: absolute;
-  content: "";
-  width: 14px;
-  height: 12px;
-  top: 2px;
+  display: block;
+  width: 15px;
+  height: 15px;
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 3px;
 }
+
 
 
 /* Заголовок Каталога */
@@ -2277,6 +2272,10 @@ input[id="delivery-radio"]:checked ~ .service-guarantee {
 
 .bookmark:active {
   opacity: 0.3;
+}
+
+.catalog-item {
+box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0);
 }
 
 .catalog-item .actions{
