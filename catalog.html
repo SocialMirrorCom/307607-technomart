@@ -12,19 +12,19 @@
   		<div class="header-top">
         <div class="container">
           <div class="logo-search-block">
-        <a href="#" class="main-header-logo"><img src="img/logo-header.png" alt="Инструменты Техномарт" width="220" height="47"></a>
+        <a href="index.html" class="main-header-logo"><p>Техномарт</p></a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <label for="search-field">Поиск:</label>
-            <input type="search" id="search-field" name="search-field">
+          <label for="search-field"></label>
+            <input type="search" id="search-field" name="search-field" placeholder="Поиск:">
         </form>
         </div>
         <ul class="header-top-right-side">
-        <li class="header-favorite"><a href="#">Закладки: 0</a></li>
-        <li class="header-cart header-cart-catalog"><a href="#">Корзина: 10</a></li>
-        <li class="header-order"><a href="#">Оформить заказ</a></li>
+        <li><a class="header-favorite" href="#">Закладки: 0</a></li>
+        <li><a class="header-cart header-cart-catalog" href="#">Корзина: 10</a></li>
+        <li><a class="header-order" href="#">Оформить заказ</a></li>
         </ul>
       </div>
-      </div>
+    </div>
   		<div class="header-middle">
   			<h1>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
   			<div class="contacts">
@@ -257,7 +257,7 @@
 <footer class="main-footer">
   <div class="footer-top">
     <div class="container">
-    <a href="#" class="footer-logo"><img src="img/logo-footer.png" alt="Инструменты Техномарт" width="220" height="68"></a>
+    <a href="index.html" class="footer-logo"><img src="img/logo-footer.png" alt="Инструменты Техномарт" width="220" height="68"></a>
 <ul class="footer-nav-white">
   <li><a href="#">Компания</a></li>
   <li><a href="#">Новости</a></li>
@@ -338,12 +338,13 @@
 </section>
 <script>
    var buy = document.querySelector(".buy");
+   var popupCatalog = document.querySelector(".modal-add-to-cart");
 
 
 
    buy.addEventListener("click", function (evt) {
      evt.preventDefault();
-     popup.classList.add("modal-show");
+     popupCatalog.classList.add("modal-show");
    });
 
    </script>
