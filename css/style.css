@@ -215,7 +215,7 @@ input[type="radio"].visually-hidden {
 
 .header-top-right-side .header-cart-catalog {
   background-color: #ee3643;
-  padding-right: 25px;
+  padding-right: 28px;
   background-image: url("../img/icon-cart-white.svg");
 }
 
@@ -361,8 +361,6 @@ h1 {
   padding-bottom: 11px;
   padding-right: 10px;
 
-  /*padding: 11px 69px 11px 47px;*/
-
 }
 
 .user-name a:active {
@@ -453,6 +451,16 @@ h1 {
   padding-left: 48px;
 }
 
+.authorized-user-name {
+  margin-top: 30px;
+}
+
+.user-navigation-catalog {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  margin-top: -10px;
+}
 .user-navigation-catalog a {
   font-size: 16px;
   line-height: 18px;
@@ -1795,6 +1803,10 @@ input[id="delivery-radio"]:checked ~ .service-guarantee {
 
 /* Страница Каталог */
 
+.main-header-catalog {
+  margin-bottom: 20px;
+}
+
 /* Хлебные Крошки */
 
 .breadcrumbs a,
@@ -1812,7 +1824,7 @@ input[id="delivery-radio"]:checked ~ .service-guarantee {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
 }
 
 .breadcrumbs li:last-child {
@@ -1861,6 +1873,7 @@ input[id="delivery-radio"]:checked ~ .service-guarantee {
   margin: 0;
   padding: 0;
   padding: 30px;
+  padding-left: 29px
 }
 
 /* Раздел фильтров и сотрировки */
@@ -1878,7 +1891,7 @@ input[id="delivery-radio"]:checked ~ .service-guarantee {
 
 
 .filters fieldset:first-of-type {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 .filters fieldset:last-of-type {
   margin-bottom: 63px;
@@ -1902,7 +1915,6 @@ input[id="delivery-radio"]:checked ~ .service-guarantee {
 }
 
 .filters legend {
-
   margin-top: 12px;
   margin-bottom: 12px;
 }
@@ -2013,6 +2025,15 @@ input[id="delivery-radio"]:checked ~ .service-guarantee {
   background-color: #000000;
 }
 
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 
 .price-legend,
 .producers-legend,
@@ -2020,6 +2041,10 @@ input[id="delivery-radio"]:checked ~ .service-guarantee {
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
+}
+
+.producers-filter {
+  margin-top: 10px;
 }
 
 .filter-option {
@@ -2180,7 +2205,7 @@ input[id="delivery-radio"]:checked ~ .service-guarantee {
 
 .red a {
   color: #ee3643;
-  margin-right: 70px;
+  margin-right: 67px;
 }
 
 .type a {
@@ -2214,7 +2239,7 @@ input[id="delivery-radio"]:checked ~ .service-guarantee {
   flex-wrap: wrap;
   margin:20px auto;
   font-size: 0;
-  margin-bottom: 52px;
+  margin-bottom: 44px;
 }
 
 .catalog-list .catalog-item:nth-child(3n) {
@@ -2304,7 +2329,7 @@ input[id="delivery-radio"]:checked ~ .service-guarantee {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-bottom: 60px;
+  margin-bottom: 38px;
 }
 
 .pagination-item a {
@@ -2347,11 +2372,11 @@ input[id="delivery-radio"]:checked ~ .service-guarantee {
 
 .category-info h2 {
   padding-top: 63px;
-  padding-bottom: 30px;
+  padding-bottom: 27px;
 }
 
 .category-info p {
-  padding-bottom: 73px;
+  padding-bottom: 68px;
 }
 
 
