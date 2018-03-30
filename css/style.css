@@ -888,7 +888,6 @@ h2 {
 
 .catalog-item {
   position: relative;
-  /*display: inline-block;*/
   display: flex;
   flex-direction: column;
   font-family: 'PT Sans', 'Arial', sans-serif;
@@ -2087,7 +2086,10 @@ input::-webkit-inner-spin-button {
   display: flex;
   flex-wrap: wrap;
   width: 355px;
-  align-items: center;
+}
+
+.sort-list li {
+  margin-bottom: 2px;
 }
 
 .dir-icons {
