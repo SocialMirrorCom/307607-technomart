@@ -867,11 +867,6 @@ h1 {
 
 .sliders-sliders {
  width: 200%;
- -webkit-transition: -webkit-transform 0.8s ease;
- transition: -webkit-transform 0.8s ease;
- -o-transition: transform 0.8s ease;
- transition: transform 0.8s ease;
- transition: transform 0.8s ease, -webkit-transform 0.8s ease;
 }
 
 .slide {
