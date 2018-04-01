@@ -46,7 +46,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   background-color: rgb(243, 247, 248);
-  margin-bottom: px;
+  margin-bottom: 59px;
   min-height: 320px;
   display: flex;
   flex-direction: column;
@@ -96,6 +96,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search {
+  position: relative;
   height: 42px;
 }
 
@@ -121,14 +122,11 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.search label {
-  position: relative;
-}
 
-.search label::before {
+.search::before {
   position: absolute;
   content: "";
-  top: 0px;
+  top: 12px;
   left: 17px;
   width: 18px;
   height: 18px;
@@ -142,13 +140,13 @@ input[type="radio"].visually-hidden {
   background-color: #212a3a;
 }
 
-.search label:hover::before {
+.search:hover::before {
   opacity: 1;
 }
 
 
-.search label:active::before,
-.search label:focus::before {
+.search:active::before,
+.search:focus::before {
   background-image: url("../img/icon-search-red.svg");
 }
 
