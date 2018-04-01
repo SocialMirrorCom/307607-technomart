@@ -1,49 +1,49 @@
 @font-face {
   font-family: "Cuprum";
-  src:  local("Cuprum") local("Cuprum Regular"),,
-        url ("../fonts/woof2/Cuprum-Regular.ttf") format("truetype"),
-        url ("../fonts/woof2/cuprum.woff2") format("woff2"),
-        url ("../fonts/woof/cuprum.woff") format("woff");
+  src:  local("Cuprum") local("Cuprum Regular"),
+        url("../fonts/ttf/Cuprum-Regular.ttf") format("truetype"),
+        url("../fonts/woff2/cuprum.woff2") format("woff2"),
+        url("../fonts/woff/cuprum.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Cuprum";
-  src: local("Cuprum"), local ("Cuprum Italic"),
-        url ("../fonts/ttf/Cuprum-Italic.ttf") format("truetype"),
-        url ("../fonts/woof2/cuprumitalic.woff2") format("woff2"),
-        url ("../fonts/woof/cuprumitalic.woff") format("woff");
+  src: local("Cuprum"), local("Cuprum Italic"),
+        url("../fonts/ttf/Cuprum-Italic.ttf") format("truetype"),
+        url("../fonts/woff2/cuprumitalic.woff2") format("woff2"),
+        url("../fonts/woff/cuprumitalic.woff") format("woff");
   font-style: italic;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Cuprum";
-  src: local("Cuprum"), local ("Cuprum Bold"),
-        url ("../fonts/ttf/Cuprum-Bold.ttf") format("truetype"),
-        url ("../fonts/woof2/cuprumbold.woff2") format("woff2"),
-        url ("../fonts/woof/cuprumbold.woff") format("woff");
+  src: local("Cuprum"), local("Cuprum Bold"),
+        url("../fonts/ttf/Cuprum-Bold.ttf") format("truetype"),
+        url("../fonts/woff2/cuprumbold.woff2") format("woff2"),
+        url("../fonts/woff/cuprumbold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: local("PT Sans"), local ("PT Sans Regular"),
-        url ("../fonts/ttf/PTSans-Regular.ttf") format("truetype"),
-        url ("../fonts/woof2/ptsans.woff2") format("woff2"),
-        url ("../fonts/woof/ptsans.woff") format("woff");
+  src: local("PT Sans"), local("PT Sans Regular"),
+        url("../fonts/ttf/PTSans-Regular.ttf") format("truetype"),
+        url("../fonts/woff2/ptsans.woff2") format("woff2"),
+        url("../fonts/woff/ptsans.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: local("PT Sans"), local ("PT Sans Bold"),
-        url ("../fonts/ttf/PTSans-Bold.ttf") format("truetype"),
-        url ("../fonts/woof2/ptsansbold.woff2") format("woff2"),
-        url ("../fonts/woof/ptsansbold.woff") format("woff");
+  src: local("PT Sans"), local("PT Sans Bold"),
+        url("../fonts/ttf/PTSans-Bold.ttf") format("truetype"),
+        url("../fonts/woff2/ptsansbold.woff2") format("woff2"),
+        url("../fonts/woff/ptsansbold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
 }
