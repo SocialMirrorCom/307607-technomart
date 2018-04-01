@@ -2563,7 +2563,7 @@ input::-webkit-inner-spin-button {
 }
 
 .filter-input-radio:disabled + label::before {
-  background-image: url("../img/radio-charge-on-black.svg");
+  background-image: url("../img/radio-charge-off-black.svg");
   opacity: 0.3;
 }
 
