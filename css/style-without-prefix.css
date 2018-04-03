@@ -1086,8 +1086,8 @@ h2 {
 
 .producer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   width: 218px;
   height: 142px;
@@ -1107,7 +1107,7 @@ h2 {
    opacity: 0.3;
 }
 
-.producer:nth-child(4n) {
+.producers-list li .producers:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -1169,7 +1169,7 @@ h2 {
   right: 0;
   width: 10px;
   height: 272px;
-  background-image: url("../img/shadow_for_services.png");
+  background-image: url("../img/shadow-for-services.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }

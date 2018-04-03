@@ -381,7 +381,8 @@ h1 {
   font-style: italic;
   color: #ee3643;
 
-  margin-left: 52px;
+  width: 197px ;
+  margin-left: 53px;
   margin-right: auto;
   margin-top: 49px;
 }
@@ -425,6 +426,8 @@ h1 {
   line-height: 24px;
   color: #32425c;
   text-align: center;
+
+  width: 255px;
 }
 
 .user-name {
@@ -1115,7 +1118,7 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
 
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   text-align: center;
 
@@ -1266,24 +1269,26 @@ h2 {
   margin-bottom: 65px;
 }
 
+.producers-list li {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
 .producer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   width: 218px;
   height: 142px;
   border: 1px solid #eaeaea;
   text-align: center;
-  margin-bottom: 20px;
-  margin-right: 20px;
 }
 
 .producer:hover,
@@ -1297,7 +1302,7 @@ h2 {
    opacity: 0.3;
 }
 
-.producer:nth-child(4n) {
+.producers-list li:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -1317,7 +1322,7 @@ h2 {
 .about-company p,
 .main-contacts p,
 .category-info p {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -1335,6 +1340,9 @@ h2 {
 
   margin: 0;
   padding: 0;
+}
+.services p {
+  width: 400px;
 }
 
 .services-block {
@@ -1361,13 +1369,14 @@ h2 {
   right: 0;
   width: 10px;
   height: 272px;
-  background-image: url("../img/shadow_for_services.png");
+  background-image: url("../img/shadow-for-services.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .services-list label {
   display: inline-block;
+  vertical-align: middle;
 
   font-weight: bold;
   font-size: 21px;
@@ -1417,6 +1426,7 @@ h2 {
 
 .service-delivery p {
   padding-right: 340px;
+  width: 275px;
 }
 
 .services-items .service-guarantee {
@@ -1430,6 +1440,7 @@ h2 {
 
 .service-guarantee p {
   padding-right: 240px;
+  width: 375px;
 }
 
 .services-items .service-credit {
@@ -1513,6 +1524,10 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
   margin-bottom: 24px;
 }
 
+.about-company p:last-of-type {
+  width: 420px;
+}
+
 .company-partners-list {
   list-style: none;
   margin: 0;
@@ -1554,6 +1569,10 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
 .main-contacts h2 {
   padding-top: 80px;
   margin-bottom: 26px;
+}
+
+.main-contacts p {
+  width: 180px;
 }
 
 .contacts-button-map img {
@@ -1665,6 +1684,11 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
           justify-content: space-between;
 }
 
+.footer-contacts {
+  width: 340px;
+  margin-left: 3px;
+}
+
 .footer-nav-yellow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1739,10 +1763,12 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
 .footer-bottom p {
   margin: 0;
   padding: 0;
+  width: 226px;
 }
 
 .footer-feedback {
   margin-right: 52px;
+  width: 100px;
 }
 
 .footer-email,
@@ -1809,6 +1835,11 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
 .footer-social a:focus,
 .footer-social a:active {
   background-color: #ee3643;
+}
+
+.developer {
+  width: 90px;
+  margin-left: 35px;
 }
 
 /*Модальные окна*/
@@ -1910,7 +1941,7 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
 
 .feedback-form input::-webkit-input-placeholder,
 .feedback-form textarea::-webkit-input-placeholder {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
@@ -1918,7 +1949,7 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
 
 .feedback-form input:-ms-input-placeholder,
 .feedback-form textarea:-ms-input-placeholder {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
@@ -1926,7 +1957,7 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
 
 .feedback-form input::-ms-input-placeholder,
 .feedback-form textarea::-ms-input-placeholder {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
@@ -1934,7 +1965,7 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
 
 .feedback-form input::placeholder,
 .feedback-form textarea::placeholder {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
@@ -2212,7 +2243,7 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
 .breadcrumbs a,
 .breadcrumb-current,
 .pagination-list a {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -2345,7 +2376,7 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
 .sort,
 .sort a,
 .filter-button {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   color: #000000;
 }
@@ -2443,7 +2474,7 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
   background-color: #000000;
 }
 
-input[type='number'] {
+input[type="number"] {
   -moz-appearance:textfield;
   cursor: pointer;
 }
@@ -2729,8 +2760,8 @@ input::-webkit-inner-spin-button {
 
 /* Клавиши Купить и В Закладки на карточке товара в каталоге */
 
-.catalog-item .actions .buy,
-.catalog-item .actions .bookmark {
+.actions .buy,
+.actions .bookmark {
   display: block;
 
   font-size: 14px;
