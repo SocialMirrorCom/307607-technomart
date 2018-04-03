@@ -2418,7 +2418,7 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
 .price-range .green-line {
   position: absolute;
 
-  top: 39px;
+  top: 40px;
   left: 40px;
   width: 120px;
   height: 2px;
@@ -2434,7 +2434,7 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
 .price-range .grey-line {
   position: absolute;
 
-  top: 39px;
+  top: 40px;
   right: 20px;
   width: 20px;
   height: 2px;
@@ -2493,15 +2493,40 @@ input::-webkit-inner-spin-button {
 }
 
 .producers-filter {
+  position: relative;
   margin-top: 10px;
 }
 
+.producers-filter::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
 .producers-filter .producers-legend {
-  padding-top: 5px;
+  padding-top: 17px;
+}
+
+.charging-type {
+  position: relative;
+}
+
+.charging-type::before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: 0;
+  width: 220px;
+  height: 1px;
+  background-color: #e5e5e5;
 }
 
 .charging-type .charging-legend {
-  padding-top: 6px;
+  padding-top: 25px;
 }
 
 .producers-filter ul li:last-child {
