@@ -2555,7 +2555,7 @@ input::-webkit-inner-spin-button {
 
 .filter-input-checkbox:focus + label::before {
   background-image: url("../img/checkbox-producers-off-active.svg");
-  outline-color: rgb(77, 144, 254); // #4D90FE
+  outline-color: rgb(77, 144, 254);
   outline-offset: -2px;
   outline-style: auto;
   outline-width: 5px;
@@ -2591,7 +2591,7 @@ input::-webkit-inner-spin-button {
 
 .filter-input-radio:focus + label::before {
   background-image: url("../img/radio-charge-off-active.svg");
-  outline-color: rgb(77, 144, 254); // #4D90FE
+  outline-color: rgb(77, 144, 254);
   outline-offset: -2px;
   outline-style: auto;
   outline-width: 5px;
