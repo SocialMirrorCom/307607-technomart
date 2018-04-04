@@ -1,39 +1,39 @@
 @font-face {
   font-family: "Cuprum";
-  src:  local("Cuprum"), local("Cuprum Regular"),
+  src:  local("Cuprum Regular"),
         url("../fonts/woff2/cuprum.woff2") format("woff2"),
         url("../fonts/woff/cuprum.woff") format("woff"),
-        url("../fonts/ttf/Cuprum-Regular.ttf") format("truetype");
+        url("../fonts/ttf/cuprum-regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Cuprum";
-  src: local("Cuprum"), local("Cuprum Italic"),
+  src:  local("Cuprum Italic"),
         url("../fonts/woff2/cuprumitalic.woff2") format("woff2"),
         url("../fonts/woff/cuprumitalic.woff") format("woff"),
-        url("../fonts/ttf/Cuprum-Italic.ttf") format("truetype");
+        url("../fonts/ttf/cuprum-italic.ttf") format("truetype");
   font-style: italic;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Cuprum";
-  src: local("Cuprum"), local("Cuprum Bold"),
+  src:  local("Cuprum Bold"),
         url("../fonts/woff2/cuprumbold.woff2") format("woff2"),
         url("../fonts/woff/cuprumbold.woff") format("woff"),
-        url("../fonts/ttf/Cuprum-Bold.ttf") format("truetype");
+        url("../fonts/ttf/cuprum-bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: local("PT Sans"), local("PT Sans Regular"),
+  src:  local("PT Sans Regular"),
         url("../fonts/woff2/ptsans.woff2") format("woff2"),
         url("../fonts/woff/ptsans.woff") format("woff"),
-        url("../fonts/ttf/PTSans-Regular.ttf") format("truetype");
+        url("../fonts/ttf/ptsans-regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
@@ -43,7 +43,7 @@
   src: local("PT Sans"), local("PT Sans Bold"),
         url("../fonts/woff2/ptsansbold.woff2") format("woff2"),
         url("../fonts/woff/ptsansbold.woff") format("woff"),
-        url("../fonts/ttf/PTSans-Bold.ttf") format("truetype");
+        url("../fonts/ttf/ptsans-bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
@@ -170,21 +170,28 @@ input[type="radio"].visually-hidden {
 }
 
 .search {
-  position: relative;
-
   height: 42px;
 }
 
 .search input {
-  background-color: transparent;
   width: 267px;
   height: 42px;
-  padding-left: 47px;
+  padding-left: 48px;
   border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 17px 12px;
+}
+
+.search input:hover {
+  background-color: #212a3a;
+  background-image: url("../img/icon-search-white.svg");
 }
 
 .search input:focus {
   background-color:  #ffffff;
+  background-image: url("../img/icon-search-red.svg");
 }
 
 .search input::-webkit-input-placeholder {
@@ -208,56 +215,19 @@ input[type="radio"].visually-hidden {
 }
 
 .search input:focus::-webkit-input-placeholder {
-  font: inherit;
-  color: #000000;
+  color: transparent;
 }
 
 .search input:focus:-ms-input-placeholder {
-  font: inherit;
-  color: #000000;
+  color: transparent;
 }
 
 .search input:focus::-ms-input-placeholder {
-  font: inherit;
-  color: #000000;
+  color: transparent;
 }
 
 .search input:focus::placeholder {
-  font: inherit;
-  color: #000000;
-}
-
-
-.search::before {
-  position: absolute;
-  content: "";
-  top: 12px;
-  left: 17px;
-  width: 18px;
-  height: 18px;
-  background-image: url("../img/icon-search-white.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.3;
-}
-
-.search:hover {
-  background-color: #212a3a;
-}
-
-.search:hover::before {
-  opacity: 1;
-}
-
-
-.search:active::before,
-.search:focus::before {
-  background-image: url("../img/icon-search-red.svg");
-}
-
-.search:active,
-.search:focus {
-  background-color: #ffffff;
+  color: transparent;
 }
 
 .header-top-right-side {
@@ -381,7 +351,7 @@ h1 {
   font-style: italic;
   color: #ee3643;
 
-  width: 197px ;
+  width: 192px ;
   margin-left: 53px;
   margin-right: auto;
   margin-top: 49px;
@@ -2570,9 +2540,16 @@ input::-webkit-inner-spin-button {
   background-position: 0 0;
 }
 
-.filter-input-checkbox + label:hover::before,
-.filter-input-checkbox + label:focus::before {
+.filter-input-checkbox:hover + label::before {
   background-image: url("../img/checkbox-producers-off-active.svg");
+}
+
+.filter-input-checkbox:focus + label::before {
+  background-image: url("../img/checkbox-producers-off-active.svg");
+  outline-color: rgb(77, 144, 254); // #4D90FE
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
 }
 
 .filter-input-checkbox:checked + label:hover::before,
@@ -2598,9 +2575,17 @@ input::-webkit-inner-spin-button {
   background-position: 0 0;
 }
 
-.filter-input-radio + label:hover::before,
-.filter-input-radio + label:focus::before {
+.filter-input-radio:hover + label::before{
   background-image: url("../img/radio-charge-off-active.svg");
+}
+
+
+.filter-input-radio:focus + label::before {
+  background-image: url("../img/radio-charge-off-active.svg");
+  outline-color: rgb(77, 144, 254); // #4D90FE
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
 }
 
 .filter-input-radio:checked + label:hover::before,
