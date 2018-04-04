@@ -352,8 +352,8 @@ h1 {
   font-style: italic;
   color: #ee3643;
 
-  width: 192px ;
-  margin-left: 53px;
+  width: 197px ;
+  margin-left: 52px;
   margin-right: auto;
   margin-top: 49px;
 }
@@ -375,7 +375,7 @@ h1 {
 .contacts .phone-number::before {
   position: absolute;
   content: "";
-  left: 13px;
+  left: 14px;
   width: 20px;
   height: 20px;
   background-image: url("../img/icon-phone.svg");
@@ -399,6 +399,7 @@ h1 {
   text-align: center;
 
   width: 255px;
+  padding-left: 6px;
 }
 
 .user-name {
@@ -719,7 +720,7 @@ h1 {
   font-weight: bold;
 
   margin-left: 22px;
-  margin-top: 22px;
+  margin-top: 21px;
   margin-bottom: 12px;
 }
 
@@ -1741,7 +1742,7 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
 .footer-bottom p {
   margin: 0;
   padding: 0;
-  width: 226px;
+  width: 230px;
 }
 
 .footer-feedback {
@@ -1770,7 +1771,7 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
 .footer-social {
   width: 135px;
   text-align: center;
-  margin-left: 163px;
+  margin-left: 158px;
   margin-right: 117px;
 
 }
