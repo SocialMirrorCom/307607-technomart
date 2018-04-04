@@ -112,6 +112,7 @@ input[type="radio"].visually-hidden {
   background-color: rgb(243, 247, 248);
   margin-bottom: 59px;
   min-height: 320px;
+  min-width: 960px;
 }
 
 /* Верхний блок шапки сайта */
@@ -647,7 +648,7 @@ h1 {
 }
 
 .site-navigation li:last-of-type a {
-  padding-right: 55px;
+  padding-right: 53px;
 }
 
 .site-navigation a:hover,
@@ -675,7 +676,12 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
 
-  width: 100%;
+  /*width: 100%;*/
+  min-width: 960px;
+}
+
+.main-catalog {
+  min-width: 960px;
 }
 
 /* Промо блок на Главной странице */
@@ -1034,7 +1040,7 @@ h2 {
           align-items: center;
 
   width: 940px;
-  min-height: 89px;
+  height: 89px;
   background-color: #f9f5f0;
   margin-bottom: 20px;
 }
@@ -1199,7 +1205,7 @@ h2 {
 
   background-color: #f9f5f0;
   width: 940px;
-  min-height: 90px;
+  height: 90px;
   margin-bottom: 20px;
 }
 
@@ -1576,6 +1582,8 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
+  min-width: 960px;
 }
 
 .footer-top {
@@ -1727,7 +1735,7 @@ input[id="delivery-radio"]:checked ~ .services-list li label[for="delivery-radio
       -ms-flex-align: center;
           align-items: center;
 
-  min-height: 107px;
+  height: 107px;
 }
 
 .footer-bottom p {
@@ -2633,7 +2641,7 @@ input::-webkit-inner-spin-button {
           align-items: center;
 
   width: 700px;
-  min-height: 38px;
+  height: 38px;
   background-color: #f7f3ec;
   border-radius: 3px;
 }
